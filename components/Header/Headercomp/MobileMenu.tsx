@@ -32,8 +32,8 @@ const MobileMenu = props => {
           >
             <span className="text-AAsecondary text-xs font-mono">01.</span>
             <span
-              className="text-white font-Text2 text-sm sm:text-base
-             hover:text-AAsecondary hover:cursor-pointer duration-300"
+              className=" font-Text2 text-sm sm:text-base
+             text-AAsecondary hover:cursor-pointer duration-300"
             >
               About
             </span>
@@ -49,8 +49,8 @@ const MobileMenu = props => {
           >
             <span className="text-AAsecondary text-xs font-mono hover:cursor-pointer">02.</span>
             <span
-              className="text-white font-Text2 text-sm sm:text-base
-             hover:text-AAsecondary hover:cursor-pointer duration-300"
+              className=" font-Text2 text-sm sm:text-base
+             text-AAsecondary hover:cursor-pointer duration-300"
             >
               Experience
             </span>
@@ -66,8 +66,8 @@ const MobileMenu = props => {
           >
             <span className="text-AAsecondary text-xs font-mono">03.</span>
             <span
-              className="text-white font-Text2 text-sm sm:text-base
-             hover:text-AAsecondary hover:cursor-pointer duration-300"
+              className=" font-Text2 text-sm sm:text-base
+             text-AAsecondary hover:cursor-pointer duration-300"
             >
               Work
             </span>
@@ -83,8 +83,8 @@ const MobileMenu = props => {
           >
             <span className="text-AAsecondary text-xs font-mono">04.</span>
             <span
-              className="text-white font-Text2 text-sm sm:text-base
-             hover:text-AAsecondary hover:cursor-pointer duration-300"
+              className=" font-Text2 text-sm sm:text-base
+             text-AAsecondary hover:cursor-pointer duration-300"
             >
               Contact
             </span>

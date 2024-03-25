@@ -36,7 +36,7 @@ export default function Home() {
     }
     setTimeout(() => {
       setShowElement(true);
-    }, 4500);
+    }, 0);
 
     setTimeout(() => {
       setShowThisCantBeReached(false);
@@ -47,7 +47,7 @@ export default function Home() {
       setShowMe(true);
       context.sharedState.finishedLoading = true;
       context.setSharedState(context.sharedState);
-    }, 10400);
+    }, 6200);
   }, [context, context.sharedState]);
 
   useEffect(() => {

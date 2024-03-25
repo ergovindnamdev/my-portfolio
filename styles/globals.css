@@ -17,11 +17,11 @@
 @layer utilities {
   body::-webkit-scrollbar {
     width: 0.4em;
-    background-color: #e5e7eb /*#0b192f*/;
+    background-color: #ffffff; /*#0b192f*/;
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: #4c5474;
+    background-color: #fff;
     scrollbar-gutter: stable;
     border-radius: 40px;
   }

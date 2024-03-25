@@ -24,7 +24,7 @@ export default function WhereIHaveWorked() {
   };
   const [DescriptionJob, setDescriptionJob] = React.useState("MangoITSolutions");
   return (
-    <div data-aos="fade-up" className="flex flex-col items-center justify-center py-24 space-y-12 bg-AAprimary">
+    <div data-aos="fade-up" className="flex flex-col items-center justify-center py-24 space-y-12 bg-AAprimary bg-[url('/Bg-Grid.png')]">
       {/* // ? Title "Where I've Worked" */}
       <section className="flex flex-row items-center">
         <div className="flex flex-row items-center">
@@ -71,7 +71,7 @@ const CompaniesBar = props => {
         }}
         className={`flex-none sm:text-sm text-xs text-center md:text-left  hover:text-AAsecondary
              hover:bg-ResumeButtonHover rounded  font-mono  
-             py-3 md:pl-6 md:px-4 md:w-44 w-32 duration-500
+             py-3 md:pl-6 md:px-4 md:w-44 w-32 duration-500 
              ${
                companyNameBackgroundColorGreen[props.ButtonOrderOfcompanyNameBackgroundColorGreen]
                  ? "bg-ResumeButtonHover text-AAsecondary"
@@ -88,7 +88,7 @@ const CompaniesBar = props => {
       id="WhereIhaveWorkedSection"
       className=" flex flex-col md:flex-row  w-screen lg:w-auto 
       overflow-auto scrollbar-hide md:overflow-hidden pb-4 md:pb-0 justify-start
-       sm:justify-center items-start sm:items-center"
+       sm:justify-center items-start sm:items-center "
     >
       {/* // ? left bar Holder */}
       <div

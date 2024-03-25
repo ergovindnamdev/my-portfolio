@@ -18,7 +18,7 @@ const IconsData = [
 
 export default function Fotter(props: { githubUrl: string; hideSocialsInDesktop: boolean }) {
   return (
-    <div className="bg-AAprimary flex flex-col justify-center items-center py-8 space-y-4">
+    <div className="bg-AAprimary flex flex-col justify-center items-center py-8 space-y-4 bg-[url('/Bg-Grid.png')]">
       {/* // ? Reach me at */}
       <div className={`flex flex-row space-x-8 ${props.hideSocialsInDesktop ? "lg:hidden" : ""}`}>
         {IconsData.map((iconData, index) => {

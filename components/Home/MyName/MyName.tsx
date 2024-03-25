@@ -7,14 +7,14 @@ export default function MyName(props: { finishedLoading: boolean }) {
   return (
     <div
       className="h-full flex flex-col justify-center
-      px-8 2xl:px-72 xl:px-56 lg:px-32  md:px-28 sm:px-8 py-32 sm:py-52  "
+      px-8 2xl:px-72 xl:px-56 lg:px-32  md:px-28 sm:px-8 py-32 sm:py-52 bg-[url('/Bg-Grid.png')]  "
     >
       <motion.span
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
-          opacity: { delay: props.finishedLoading ? 0 : 10.4, duration: props.finishedLoading ? 0 : 0.2 },
-          y: { delay: props.finishedLoading ? 0 : 10.4, duration: props.finishedLoading ? 0 : 0.2 },
+          opacity: { delay: props.finishedLoading ? 0 : 6.3, duration: props.finishedLoading ? 0 : 0.2 },
+          y: { delay: props.finishedLoading ? 0 : 6.3, duration: props.finishedLoading ? 0 : 0.2 },
         }}
         className="text-AAsecondary font-mono"
       >
@@ -24,8 +24,8 @@ export default function MyName(props: { finishedLoading: boolean }) {
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
-          opacity: { delay: props.finishedLoading ? 0 : 10.5, duration: props.finishedLoading ? 0 : 0.2 },
-          y: { delay: props.finishedLoading ? 0 : 10.5, duration: props.finishedLoading ? 0 : 0.2 },
+          opacity: { delay: props.finishedLoading ? 0 : 6.4, duration: props.finishedLoading ? 0 : 0.2 },
+          y: { delay: props.finishedLoading ? 0 : 6.4, duration: props.finishedLoading ? 0 : 0.2 },
         }}
         className="text-gray-300 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
       >
@@ -35,8 +35,8 @@ export default function MyName(props: { finishedLoading: boolean }) {
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
-          opacity: { delay: props.finishedLoading ? 0 : 10.6, duration: props.finishedLoading ? 0 : 0.2 },
-          y: { delay: props.finishedLoading ? 0 : 10.6, duration: props.finishedLoading ? 0 : 0.2 },
+          opacity: { delay: props.finishedLoading ? 0 : 6.5, duration: props.finishedLoading ? 0 : 0.2 },
+          y: { delay: props.finishedLoading ? 0 : 6.5, duration: props.finishedLoading ? 0 : 0.2 },
         }}
         className="text-gray-400 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
       >
@@ -47,8 +47,8 @@ export default function MyName(props: { finishedLoading: boolean }) {
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
-          opacity: { delay: props.finishedLoading ? 0 : 10.7, duration: props.finishedLoading ? 0 : 0.2 },
-          y: { delay: props.finishedLoading ? 0 : 10.7, duration: props.finishedLoading ? 0 : 0.2 },
+          opacity: { delay: props.finishedLoading ? 0 : 6.6, duration: props.finishedLoading ? 0 : 0.2 },
+          y: { delay: props.finishedLoading ? 0 : 6.6, duration: props.finishedLoading ? 0 : 0.2 },
         }}
         className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
       >
@@ -59,8 +59,8 @@ export default function MyName(props: { finishedLoading: boolean }) {
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
-          opacity: { delay: props.finishedLoading ? 0 : 10.8, duration: props.finishedLoading ? 0 : 0.2 },
-          y: { delay: props.finishedLoading ? 0 : 10.8, duration: props.finishedLoading ? 0 : 0.2 },
+          opacity: { delay: props.finishedLoading ? 0 : 6.7, duration: props.finishedLoading ? 0 : 0.2 },
+          y: { delay: props.finishedLoading ? 0 : 6.7, duration: props.finishedLoading ? 0 : 0.2 },
         }}
         className="mt-12"
       >
