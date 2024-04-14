@@ -224,7 +224,7 @@ export default function GetInTouch() {
                   <textarea
                     name="message"
                     id="message"
-                    rows="4"
+                    rows={4}
                     required
                     className="block w-full rounded-md border-AAsecondary-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-AAsecondary sm:text-sm"
                     value={formData.message}
@@ -237,7 +237,7 @@ export default function GetInTouch() {
                     type="submit"
                     className="block w-full rounded-md bg-white px-3.5 py-2.5 text-center text-sm shadow-sm font-mono text-sm text-AAsecondary border-AAsecondary px-8 py-4 border-[1.5px] rounded"
                   >
-                    Let's talk
+                    Let&aposs talk
                   </button>
                 </div>
               </div>
