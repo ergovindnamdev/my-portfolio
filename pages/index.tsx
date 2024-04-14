@@ -71,7 +71,7 @@ export default function Home() {
         <meta property="og:url" content={`https://govindnam.dev`} />
         <link rel="canonical" href={`https://govindnam.dev`} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Manu Arora" />
+        <meta property="og:site_name" content="Govind Namdev" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
