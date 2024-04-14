@@ -83,7 +83,7 @@ export default function GetInTouch() {
     <div
       id="GetInTouchSection"
       data-aos="fade-up"
-      className="flex flex-col space-y-4 w-full h-150 items-center bg-AAprimary bg-[url('/Bg-Grid.png')]"
+      className="flex flex-col space-y-4 w-full py-20 h-150 items-center bg-AAprimary bg-[url('/Bg-Grid.png')]"
     >
       {/* // ? Title === > What's Next?  */}
       <div className="flex flex-row items-center ">
