@@ -35,7 +35,7 @@ export default function HitaishinInfotech() {
       <div className="flex flex-col space-y-5 max-w-xl px-4 md:px-0">
         <div className="flex flex-col spacey-y-2">
           {/* Title */}
-          <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
+          <span className="text-gray-500 sm:text-lg text-sm font-Arimo tracking-wide">
             Web Developer <span className="text-AAsecondary">@ PHP</span>
           </span>
           {/* Date */}

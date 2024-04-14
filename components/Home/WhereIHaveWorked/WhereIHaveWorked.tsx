@@ -32,7 +32,7 @@ export default function WhereIHaveWorked() {
           <span className="text-AAsecondary font-sans text-sm  sm:text-xl"> 02.</span>
         </div>
 
-        <span className="text-gray-200 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
+        <span className="text-gray-300 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
           Where I&apos;ve Worked
         </span>
         <div className="bg-gray-400 h-[0.2px] w-16 sm:w-44 md:w-80"></div>

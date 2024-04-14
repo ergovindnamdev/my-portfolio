@@ -47,9 +47,9 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
         animate={{ y: "0%" }}
         // ! change delay from 0 to 11
         transition={{ y: { delay: props.finishedLoading ? 0 : 11, duration: props.finishedLoading ? 0 : 0.5 } }}
-        className="z-10 fixed bottom-0 -right-10 hidden lg:flex flex-row items-center justify-between"
+        className="z-10 fixed bottom-0 -right-10 hidden lg:flex flex-row items-center justify-between w-48"
       >
-        <div className="flex flex-col space-y-24 justify-center items-center">
+        <div className="flex flex-col space-y-24 justify-center items-center w-48">
           {/* Open Email on click */}
           <motion.div
             initial={{ rotate: 90 }}
