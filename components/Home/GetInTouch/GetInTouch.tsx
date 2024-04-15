@@ -237,7 +237,7 @@ export default function GetInTouch() {
                     type="submit"
                     className="block w-full rounded-md bg-white px-3.5 py-2.5 text-center text-sm shadow-sm font-mono text-sm text-AAsecondary border-AAsecondary px-8 py-4 border-[1.5px] rounded"
                   >
-                    Let&aposs talk
+                    Let&apos;s talk
                   </button>
                 </div>
               </div>
