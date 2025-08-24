@@ -47,7 +47,7 @@ export default function Startup() {
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: "100%" }}
-              transition={{ duration: 3.5, ease: "easeInOut" }}
+              transition={{ duration: 2, ease: "easeInOut" }}
               className="h-full bg-gradient-to-r from-cyan-400 to-blue-500"
             ></motion.div>
           </div>

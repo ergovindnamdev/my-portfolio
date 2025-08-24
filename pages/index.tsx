@@ -40,14 +40,14 @@ export default function Home() {
 
     setTimeout(() => {
       setShowThisCantBeReached(false);
-    }, 5400);
+    }, 2000);
     // ? INFORMATIONAL next function will show the component after changing the state of ShowMe
     setTimeout(() => {
       setShowElement(false);
       setShowMe(true);
       context.sharedState.finishedLoading = true;
       context.setSharedState(context.sharedState);
-    }, 6200);
+    }, 2500);
   }, [context, context.sharedState]);
 
   useEffect(() => {
