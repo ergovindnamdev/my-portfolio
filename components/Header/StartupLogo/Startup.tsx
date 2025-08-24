@@ -1,118 +1,64 @@
+
 import React from "react";
-import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
-const Startup = (props) => {
-  let WidthBy2 = 0;
-  let HeightBy2 = 0;
-  let greaterThanSmall=false;
-  if (typeof window !== "undefined") {
-    if (window.innerWidth > 768) {
-      WidthBy2 = window.innerWidth / 2 - 48 - 20;
-      HeightBy2 = window.innerHeight / 2-44;
-      greaterThanSmall=true;
-    }else{
-      WidthBy2 = window.innerWidth / 2 -28;
-      HeightBy2 = window.innerHeight / 2-40;
-    }
+import { motion } from "framer-motion";
 
-    console.log("width by 2: ", WidthBy2);
-  }
-
+export default function Startup() {
   return (
-
-  <motion.div 
-    initial={{opacity:1}}
-    animate={{opacity:0}}
-    transition={{opacity:{delay:4.9,duration:0}}}
-    className="absolute h-full w-full flex justify-center items-center bg-StartupBackground bg-[url('/Bg-Grid.png')]">
+    <div className="absolute bg-AAprimary flex flex-col justify-center items-center w-full h-screen z-50">
       <motion.div
-        initial={{ opacity: 0, x: 0, y: 0, scale: "100%" }}
-        animate={{ opacity: [1, 0, 1], x: -WidthBy2, y:-HeightBy2,scale: greaterThanSmall?"57%":"50%" }}
-        transition={{
-          opacity: { delay: 3, duration: 1.5 },
-          x: { duration: 0.5, delay: 4.5 },
-          y:{ duration: 0.5, delay: 4.5 },
-          scale: { duration: 0.5, delay: 4.5 },
-        }}
-        className="relative  h-24 w-24 flex justify-center items-center"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="flex flex-col items-center space-y-8"
       >
+        {/* Modern circular loading indicator */}
+        <div className="relative">
+          <motion.div
+            className="w-16 h-16 border-4 border-gray-600 rounded-full"
+            initial={{ borderTopColor: "transparent" }}
+            animate={{ 
+              borderTopColor: "#64ffda",
+              rotate: 360 
+            }}
+            transition={{ 
+              rotate: { duration: 1.5, repeat: Infinity, ease: "linear" },
+              borderTopColor: { duration: 0.8, ease: "easeOut" }
+            }}
+          />
+          <motion.div
+            className="absolute inset-0 w-16 h-16 border-4 border-transparent border-t-AAsecondary rounded-full"
+            animate={{ rotate: -360 }}
+            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+          />
+        </div>
+
+        {/* Loading text */}
         <motion.div
-          initial={{ scale: 0, x: 0 }}
-          animate={{ scale: 1, rotate: 90, x: 38 }}
-          transition={{
-            scale: { duration: 1.5 },
-            rotate: { delay: 0.5, duration: 0.5 },
-            x: { delay: 0.8, duration: 1 },
-          }}
-          className="absolute h-2 w-12 bg-AAsecondary rounded "
-        ></motion.div>
-        <motion.div
-          initial={{ scale: 0, x: 0 }}
-          animate={{ scale: 1, rotate: 90, x: -39 }}
-          transition={{
-            scale: { duration: 1.5 },
-            rotate: { delay: 0.5, duration: 0.5 },
-            x: { delay: 0.8, duration: 1 },
-          }}
-          className="absolute h-2 w-12 bg-AAsecondary rounded "
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0, x: 0, y: 0 }}
-          animate={{ opacity: 1, scale: 1.05, rotate: 35, x: 18, y: -34 }}
-          transition={{
-            opacity: { delay: 2, duration: 0 },
-            scale: { duration: 2.5 },
-            rotate: { delay: 0.5, duration: 0.5 },
-            y: { delay: 1.2, duration: 2 },
-            x: { delay: 1.5, duration: 0.5 },
-          }}
-          className="absolute h-2 w-12 bg-AAsecondary rounded "
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0, x: 0, y: 0 }}
-          animate={{ opacity: 1, scale: 1.05, rotate: -35, x: -18, y: -34 }}
-          transition={{
-            opacity: { delay: 2, duration: 0 },
-            scale: { duration: 2.5 },
-            rotate: { delay: 0.5, duration: 0.5 },
-            y: { delay: 1.2, duration: 2 },
-            x: { delay: 1.5, duration: 0.5 },
-          }}
-          className="absolute h-2 w-12 bg-AAsecondary rounded "
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0, x: 0, y: 0 }}
-          animate={{ opacity: 1, scale: 1.05, rotate: -35, x: 18, y: 34 }}
-          transition={{
-            opacity: { delay: 2, duration: 0 },
-            scale: { duration: 2.5 },
-            rotate: { delay: 0.5, duration: 0.5 },
-            y: { delay: 1.2, duration: 2 },
-            x: { delay: 1.5, duration: 0.5 },
-          }}
-          className="absolute h-2 w-12 bg-AAsecondary rounded "
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0, x: 0, y: 0 }}
-          animate={{ opacity: 1, scale: 1.05, rotate: 35, x: -18, y: 34 }}
-          transition={{
-            opacity: { delay: 2, duration: 0 },
-            scale: { duration: 2.5 },
-            rotate: { delay: 0.5, duration: 0.5 },
-            y: { delay: 1.2, duration: 2 },
-            x: { delay: 1.5, duration: 0.5 },
-          }}
-          className="absolute h-2 w-12 bg-AAsecondary rounded "
-        ></motion.div>
-        <motion.span
-          initial={{ scale: 0, y: -4 ,x:-1}}
-          animate={{ scale: 1 }}
-          transition={{ scale: { delay: 1.5, duration: 1.5 } }}
-          className="text-AAsecondary font-Text2 text-4xl"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+          className="text-center"
         >
-          GN
-        </motion.span>
+          <h2 className="text-2xl font-bold text-gray-200 mb-2">Govind Namdev</h2>
+          <motion.p
+            className="text-sm text-gray-400 font-mono"
+            animate={{ opacity: [0.5, 1, 0.5] }}
+            transition={{ duration: 2, repeat: Infinity }}
+          >
+            Loading Portfolio...
+          </motion.p>
+        </motion.div>
+
+        {/* Progress bar */}
+        <div className="w-64 h-1 bg-gray-700 rounded-full overflow-hidden">
+          <motion.div
+            className="h-full bg-gradient-to-r from-AAsecondary to-blue-400 rounded-full"
+            initial={{ width: 0 }}
+            animate={{ width: "100%" }}
+            transition={{ duration: 3, ease: "easeInOut" }}
+          />
+        </div>
       </motion.div>
-    </motion.div>
+    </div>
   );
-};
-export default Startup;
+}
