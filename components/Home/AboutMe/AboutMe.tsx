@@ -131,7 +131,7 @@ export default function AboutMe(props) {
                 {/* Image */}
                 <div className="aspect-square relative">
                   <Img
-                    src="/img/My-Pic.jpg"
+                    src="/img/My-Pic.JPG"
                     className="w-full h-full object-cover"
                     alt="Govind Namdev - Full Stack Engineer & AI Specialist"
                   />
