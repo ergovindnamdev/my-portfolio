@@ -70,7 +70,7 @@ export default function GetInTouch() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="https://calendly.com/govind-namdev/project-discussion"
+              href="https://calendly.com/ergovindnamdev/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-block"
