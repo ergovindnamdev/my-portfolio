@@ -1,24 +1,33 @@
-
 import React from "react";
 import GithubIcon from "../Icons/GithubIcon";
 import LinkedinIcon from "../Icons/LinkedinIcon";
 import InstagramIcon from "../Icons/InstagramIcon";
 import YoutubeIcon from "../Icons/YoutubeIcon";
 
-const ClickableIcon = props => {
+const ClickableIcon = (props) => {
   return (
     <a href={props.href} className="" target={"_blank"} rel="noreferrer">
-      <props.Icon className={"w-6 h-6 text-gray-400 hover:text-cyan-400 fill-current hover:cursor-pointer transition-all duration-300 hover:scale-110"} />
+      <props.Icon
+        className={
+          "w-6 h-6 text-gray-400 hover:text-cyan-400 fill-current hover:cursor-pointer transition-all duration-300 hover:scale-110"
+        }
+      />
     </a>
   );
 };
 
 const IconsData = [
   { href: "https://github.com/ergovindnamdev", Icon: GithubIcon },
-  { href: "https://www.linkedin.com/in/govind-namdev-42945137/", Icon: LinkedinIcon },
+  {
+    href: "https://www.linkedin.com/in/govind-namdev-42945137/",
+    Icon: LinkedinIcon,
+  },
 ];
 
-export default function Footer(props: { githubUrl: string; hideSocialsInDesktop: boolean }) {
+export default function Footer(props: {
+  githubUrl: string;
+  hideSocialsInDesktop: boolean;
+}) {
   return (
     <div className="bg-gradient-to-br from-slate-900 via-gray-900 to-black relative overflow-hidden">
       {/* Background Elements */}
@@ -29,9 +38,17 @@ export default function Footer(props: { githubUrl: string; hideSocialsInDesktop:
 
       <div className="relative z-10 flex flex-col justify-center items-center py-12 space-y-6">
         {/* Social Icons */}
-        <div className={`flex flex-row space-x-8 ${props.hideSocialsInDesktop ? "lg:hidden" : ""}`}>
+        <div
+          className={`flex flex-row space-x-8 ${props.hideSocialsInDesktop ? "lg:hidden" : ""}`}
+        >
           {IconsData.map((iconData, index) => {
-            return <ClickableIcon key={index} href={iconData.href} Icon={iconData.Icon} />;
+            return (
+              <ClickableIcon
+                key={index}
+                href={iconData.href}
+                Icon={iconData.Icon}
+              />
+            );
           })}
         </div>
 
@@ -39,13 +56,18 @@ export default function Footer(props: { githubUrl: string; hideSocialsInDesktop:
         <div className="w-32 h-[1px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent"></div>
 
         {/* Footer Text */}
-        <a href={props.githubUrl} className="" target={"_blank"} rel="noreferrer">
+        <a
+          href={props.githubUrl}
+          className=""
+          target={"_blank"}
+          rel="noreferrer"
+        >
           <div className="group flex flex-col font-mono justify-center items-center text-gray-400 text-sm space-y-2 hover:text-cyan-400 transition-all duration-300">
             <span className="group-hover:text-cyan-400 sm:text-sm text-xs">
               Built with ❤️ by Govind Namdev
             </span>
             <span className="text-xs opacity-70">
-              © 2024 • Made with Next.js & Tailwind CSS
+              © 2025 • Made with Next.js & Tailwind CSS
             </span>
           </div>
         </a>
@@ -54,8 +76,8 @@ export default function Footer(props: { githubUrl: string; hideSocialsInDesktop:
         <div className="flex flex-col sm:flex-row items-center gap-4 text-xs text-gray-500 mt-4">
           <span>Available for new projects</span>
           <span className="hidden sm:block">•</span>
-          <a 
-            href="mailto:ergovindnamdev@gmail.com" 
+          <a
+            href="mailto:ergovindnamdev@gmail.com"
             className="hover:text-cyan-400 transition-colors duration-300"
           >
             ergovindnamdev@gmail.com

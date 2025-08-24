@@ -20,8 +20,12 @@ export default function GetInTouch() {
         <div className="flex flex-row items-center justify-center mb-8">
           <ArrowIcon className="flex-none h-5 md:h-6 w-5 md:w-5 text-cyan-400" />
           <div className="flex flex-row space-x-2 items-center ml-4">
-            <span className="text-cyan-400 font-mono text-sm sm:text-base">&gt; 4</span>
-            <span className="font-mono text-cyan-400 text-base">What's Next?</span>
+            <span className="text-cyan-400 font-mono text-sm sm:text-base">
+              04.
+            </span>
+            <span className="font-mono text-cyan-400 text-base">
+              What's Next?
+            </span>
           </div>
         </div>
 
@@ -33,38 +37,55 @@ export default function GetInTouch() {
 
         {/* Description */}
         <p className="text-gray-300 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed mb-12">
-          Ready to turn your ideas into reality? I'm here to help you build scalable solutions, 
-          implement AI features, or tackle complex technical challenges. Let's discuss your project 
-          and explore how we can work together.
+          Ready to turn your ideas into reality? I'm here to help you build
+          scalable solutions, implement AI features, or tackle complex technical
+          challenges. Let's discuss your project and explore how we can work
+          together.
         </p>
 
         {/* Value Propositions */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-cyan-400/30 transition-all duration-300">
             <div className="text-cyan-400 text-3xl mb-4">🚀</div>
-            <h3 className="text-white font-semibold text-lg mb-2">Rapid Development</h3>
-            <p className="text-gray-400 text-sm">Fast-track your project with proven architectures and best practices</p>
+            <h3 className="text-white font-semibold text-lg mb-2">
+              Rapid Development
+            </h3>
+            <p className="text-gray-400 text-sm">
+              Fast-track your project with proven architectures and best
+              practices
+            </p>
           </div>
 
           <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-cyan-400/30 transition-all duration-300">
             <div className="text-cyan-400 text-3xl mb-4">🤖</div>
-            <h3 className="text-white font-semibold text-lg mb-2">AI Integration</h3>
-            <p className="text-gray-400 text-sm">Leverage cutting-edge AI and machine learning capabilities</p>
+            <h3 className="text-white font-semibold text-lg mb-2">
+              AI Integration
+            </h3>
+            <p className="text-gray-400 text-sm">
+              Leverage cutting-edge AI and machine learning capabilities
+            </p>
           </div>
 
           <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-cyan-400/30 transition-all duration-300">
             <div className="text-cyan-400 text-3xl mb-4">📈</div>
-            <h3 className="text-white font-semibold text-lg mb-2">Scalable Solutions</h3>
-            <p className="text-gray-400 text-sm">Build for growth with cloud-native and microservices architecture</p>
+            <h3 className="text-white font-semibold text-lg mb-2">
+              Scalable Solutions
+            </h3>
+            <p className="text-gray-400 text-sm">
+              Build for growth with cloud-native and microservices architecture
+            </p>
           </div>
         </div>
 
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-slate-800/60 to-gray-800/60 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 mb-8">
-          <h3 className="text-white text-2xl font-bold mb-4">Ready to Start Your Project?</h3>
+          <h3 className="text-white text-2xl font-bold mb-4">
+            Ready to Start Your Project?
+          </h3>
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            Book a free 30-minute consultation to discuss your project requirements, 
-            timeline, and how I can help bring your vision to life.
+            Book a free 30-minute consultation to discuss your project
+            requirements, timeline, and how I can help bring your vision to
+            life.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -100,8 +121,8 @@ export default function GetInTouch() {
         <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
           <div className="text-center">
             <div className="text-cyan-400 text-sm font-mono mb-2">Email</div>
-            <a 
-              href="mailto:ergovindnamdev@gmail.com" 
+            <a
+              href="mailto:ergovindnamdev@gmail.com"
               className="text-gray-300 hover:text-cyan-400 transition-colors duration-300"
             >
               ergovindnamdev@gmail.com
@@ -109,7 +130,9 @@ export default function GetInTouch() {
           </div>
 
           <div className="text-center">
-            <div className="text-cyan-400 text-sm font-mono mb-2">Response Time</div>
+            <div className="text-cyan-400 text-sm font-mono mb-2">
+              Response Time
+            </div>
             <div className="text-gray-300">Usually within 24 hours</div>
           </div>
         </div>
@@ -117,7 +140,9 @@ export default function GetInTouch() {
         {/* Availability Status */}
         <div className="mt-8 inline-flex items-center space-x-2 bg-green-500/10 border border-green-500/20 rounded-full px-4 py-2">
           <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-          <span className="text-green-400 text-sm font-mono">Available for new projects</span>
+          <span className="text-green-400 text-sm font-mono">
+            Available for new projects
+          </span>
         </div>
       </div>
     </div>
