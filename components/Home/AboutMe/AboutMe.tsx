@@ -1,100 +1,134 @@
+
 import React from "react";
 import Img from "../../../components/smallComp/image/Img";
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
+
 export default function AboutMe(props) {
   const technologies = [
     ["React.js", "Next.js", "TypeScript", "Node.js", "Python"],
     ["TensorFlow", "OpenAI GPT", "Machine Learning", "AI/ML", "Docker"],
     ["AWS", "MongoDB", "PostgreSQL", "GraphQL", "Redis"],
   ];
+
   return (
-    <div id="aboutSection" data-aos="fade-up" className="snap-start flex flex-col  items-center p-0 bg-gradient-to-br from-AAprimary via-slate-900 to-AAprimary bg-[url('/Bg-Grid.png')] relative">
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-cyan-500/5"></div>
-      <div className="relative z-10 w-full">
-      {/* // ? 0.1 About Me */}
-      <div
-        className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] 
-        md:w-[700px] lg:w-[900px] "
-      >
-        <div className="flex flex-row items-center ">
-          <div className="flex flex-row  items-center mr-4">
-            <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 translate-y-[0.5px] text-AAsecondary"} />
-            <span className="text-AAsecondary font-Header text-sm  sm:text-xl"> 01.</span>
-            <span className="flex-none text-gray-300 opacity-85 font-bold tracking-wider text-lg sm:text-2xl pl-4">
+    <div 
+      id="aboutSection" 
+      data-aos="fade-up" 
+      className="min-h-screen flex flex-col items-center justify-center px-6 sm:px-12 lg:px-16 xl:px-24 py-20 bg-gradient-to-br from-slate-900 via-gray-900 to-black relative"
+    >
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-32 right-32 w-48 h-48 bg-cyan-500 opacity-10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-32 left-32 w-64 h-64 bg-blue-500 opacity-10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-purple-500 opacity-5 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
+      </div>
+
+      <div className="relative z-10 w-full max-w-6xl">
+        {/* Section Header */}
+        <div className="flex flex-row items-center mb-16">
+          <div className="flex flex-row items-center mr-6">
+            <ArrowIcon className="h-4 md:h-6 w-4 md:w-5 text-cyan-400" />
+            <span className="text-cyan-400 font-mono text-lg sm:text-xl ml-2">&gt; 01.</span>
+            <span className="text-white font-bold tracking-wide text-2xl sm:text-3xl lg:text-4xl pl-4">
               About Me
             </span>
           </div>
-          <div className="bg-gray-400 h-[0.2px] w-full sm:w-72 ml-4"></div>
+          <div className="bg-gradient-to-r from-cyan-400 to-transparent h-[1px] flex-1 ml-6"></div>
         </div>
-        {/* // ? Paragraphs */}
 
-        <div className="w-full flex flex-col md:flex-row space-y-8 md:space-y-0  md:space-x-8 sm:space-x-2 ">
-          <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
-            <div className="font-Header ">
-              <span className="text-gray-400 ">
-              Hello! I am Govind Namdev, a <span className="text-AAsecondary">Full-Stack Engineer</span> and <span className="text-AAsecondary">AI/ML Enthusiast</span> with a passion for building cutting-edge solutions. I specialize in creating scalable web applications and integrating artificial intelligence to solve complex business problems. My journey in computer science since 2011 has evolved from traditional web development to embracing the AI revolution.
-              </span>
+        {/* Content */}
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
+          {/* Text Content */}
+          <div className="flex-1 space-y-6">
+            {/* Introduction */}
+            <div className="bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-cyan-400/30 transition-all duration-300">
+              <p className="text-gray-200 text-lg leading-relaxed">
+                Hello! I am <span className="text-cyan-400 font-semibold">Govind Namdev</span>, a{" "}
+                <span className="text-cyan-400 font-semibold">Full-Stack Engineer</span> and{" "}
+                <span className="text-cyan-400 font-semibold">AI/ML Enthusiast</span> with a passion for building cutting-edge solutions. I specialize in creating scalable web applications and integrating artificial intelligence to solve complex business problems.
+              </p>
             </div>
-            <div className="font-Header ">
-              <span className="text-gray-400 ">
-              With expertise spanning <span className="text-AAsecondary">full-stack development</span>, <span className="text-AAsecondary">AI/ML implementation</span>, and <span className="text-AAsecondary">cloud architecture</span>, I've successfully delivered enterprise-grade solutions across various industries. I specialize in integrating <span className="text-AAsecondary">OpenAI APIs</span>, building <span className="text-AAsecondary">intelligent chatbots</span>, and creating <span className="text-AAsecondary">predictive analytics</span> systems while maintaining my expertise in modern web technologies.
-              </span>
+
+            {/* Experience */}
+            <div className="bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-cyan-400/30 transition-all duration-300">
+              <p className="text-gray-200 text-lg leading-relaxed">
+                With expertise spanning <span className="text-cyan-400 font-semibold">full-stack development</span>,{" "}
+                <span className="text-cyan-400 font-semibold">AI/ML implementation</span>, and{" "}
+                <span className="text-cyan-400 font-semibold">cloud architecture</span>, I've successfully delivered enterprise-grade solutions across various industries. I specialize in integrating{" "}
+                <span className="text-cyan-400 font-semibold">OpenAI APIs</span>, building{" "}
+                <span className="text-cyan-400 font-semibold">intelligent chatbots</span>, and creating{" "}
+                <span className="text-cyan-400 font-semibold">predictive analytics</span> systems.
+              </p>
             </div>
-            <div className="font-Header ">
-              <span className="text-gray-400 ">
-              Currently, I'm fascinated by the intersection of <span className="text-AAsecondary">Generative AI</span> and web development, building applications that leverage <span className="text-AAsecondary">LLMs</span>, <span className="text-AAsecondary">computer vision</span>, and <span className="text-AAsecondary">natural language processing</span>. My commitment to staying at the forefront of technology drives me to continuously explore emerging AI tools and frameworks.
-              </span>
+
+            {/* Current Focus */}
+            <div className="bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-cyan-400/30 transition-all duration-300">
+              <p className="text-gray-200 text-lg leading-relaxed">
+                Currently, I'm fascinated by the intersection of <span className="text-cyan-400 font-semibold">Generative AI</span> and web development, building applications that leverage{" "}
+                <span className="text-cyan-400 font-semibold">LLMs</span>,{" "}
+                <span className="text-cyan-400 font-semibold">computer vision</span>, and{" "}
+                <span className="text-cyan-400 font-semibold">natural language processing</span>. My commitment to staying at the forefront of technology drives me to continuously explore emerging AI tools and frameworks.
+              </p>
             </div>
-            
-            <div className="font-Header tracking-wide">
-              <span className="text-gray-400  ">
-                Here are a few technologies I&apos;ve been working with recently :
-              </span>
+
+            {/* Technologies Section */}
+            <div className="mt-8">
+              <h3 className="text-white text-xl font-semibold mb-6 flex items-center">
+                <span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>
+                Technologies I work with
+              </h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {technologies.map((techGroup, groupIndex) => (
+                  <div key={groupIndex} className="space-y-3">
+                    {techGroup.map((tech, index) => (
+                      <div 
+                        key={index} 
+                        className="flex items-center space-x-3 group hover:translate-x-2 transition-all duration-300"
+                      >
+                        <ArrowIcon className="h-3 w-3 text-cyan-400 group-hover:text-white transition-colors duration-300" />
+                        <span className="text-gray-300 group-hover:text-white transition-colors duration-300 font-medium">
+                          {tech}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="font-Header tracking-wide grid grid-cols-1 md:grid-cols-3 gap-8">
-              {technologies.map((techGroup, groupIndex) => (
-                <div key={groupIndex} className="flex flex-col space-y-3">
-                  {techGroup.map((tech, index) => (
-                    <div key={index} className="flex flex-row items-center space-x-2 group hover:translate-x-1 transition-transform duration-200">
-                      <ArrowIcon className={"h-3 w-3 text-AAsecondary group-hover:text-white transition-colors duration-200"} />
-                      <span className="text-gray-400 sm:text-sm text-xs group-hover:text-white transition-colors duration-200">{tech}</span>
-                    </div>
-                  ))}
+          </div>
+
+          {/* Image Section */}
+          <div className="flex-shrink-0 lg:w-80">
+            <div className="relative group">
+              {/* Decorative border */}
+              <div className="absolute inset-0 border-2 border-cyan-400 rounded-xl transform translate-x-6 translate-y-6 group-hover:translate-x-8 group-hover:translate-y-8 transition-transform duration-300"></div>
+              
+              {/* Image container */}
+              <div className="relative bg-slate-800 rounded-xl overflow-hidden border border-slate-700 group-hover:border-cyan-400/50 transition-all duration-300">
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-cyan-400 opacity-20 group-hover:opacity-0 transition-opacity duration-300 z-10"></div>
+                
+                {/* Image */}
+                <div className="aspect-square relative">
+                  <Img
+                    src="/img/My-Pic.jpg"
+                    className="w-full h-full object-cover"
+                    alt="Govind Namdev - Full Stack Engineer & AI Specialist"
+                  />
                 </div>
-              ))}
-            </div>
-          </div>
-          {/* // ? Image in Desktop and Tablet */}
-          <div className="group relative lg:w-96 lg:h-96 md:w-72 md:h-72 md:block hidden ">
-            <div
-              className="group-hover:translate-x-3 group-hover:translate-y-3
-               duration-300 absolute w-5/6 h-5/6 border-2 border-AAsecondary translate-x-5 
-               translate-y-5 rounded"
-            ></div>
+              </div>
 
-            <div className="absolute w-5/6 h-5/6  rounded overflow-hidden">
-              <div className="absolute w-full h-full group-hover:opacity-0 bg-AAsecondary opacity-10 duration-300 rounded overflow-hidden"></div>
-              <Img
-                src={"/img/My-Pic.jpg"}
-                className={"object-contain rounded-lg"}
-                alt="My Image Not Found"
-              />
+              {/* Stats overlay */}
+              <div className="absolute -bottom-6 -right-6 bg-slate-900 border border-cyan-400 rounded-lg p-4 backdrop-blur-sm">
+                <div className="text-center">
+                  <div className="text-cyan-400 text-2xl font-bold">5+</div>
+                  <div className="text-gray-300 text-sm">Years Experience</div>
+                </div>
+              </div>
             </div>
-          </div>
-          {/* // ?Image in Mobile */}
-          <div className=" relative w-full h-48 md:hidden  flex justify-center items-center">
-            <div className="absolute w-48 h-full  rounded  translate-x-5 translate-y-5 border-2 border-AAsecondary"></div>
-            <div className="absolute w-48 h-full rounded overflow-hidden">
-              <Img
-                src={"/img/My-Pic.jpg"}
-                className={"object-contain rounded-lg"}
-                alt="My Image Not Found"
-              />
-            </div>
-            <div className="absolute w-48 h-full  bg-AAsecondary opacity-10 md:opacity-60  rounded overflow-hidden"></div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   );
