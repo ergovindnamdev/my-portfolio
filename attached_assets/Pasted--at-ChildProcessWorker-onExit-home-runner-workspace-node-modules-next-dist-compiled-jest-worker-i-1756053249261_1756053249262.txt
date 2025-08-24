@@ -1,0 +1,61 @@
+ at ChildProcessWorker._onExit (/home/runner/workspace/node_modules/next/dist/compiled/jest-worker/index.js:1:12599)
+    at ChildProcess.emit (node:events:524:28)
+info  - Linting and checking validity of types ...Failed to compile.
+
+./components/Header/Header.tsx:21:9
+Type error: 'context' is possibly 'null'.
+
+  19 |   // Define the EventListener for the NavBar
+  20 |   useEffect(() => {
+> 21 |     if (context.sharedState.portfolio.NavBar.IntervalEvent == null) {
+     |         ^
+  22 |       context.sharedState.portfolio.NavBar.IntervalEvent=() => {
+  23 |         if (scrollSizeY.current == 0) {
+  24 |           scrollSizeY.current = window.scrol
+Error: Call retries were exceeded
+    at ChildProcessWorker.initialize (/home/runner/workspace/node_modules/next/dist/compiled/jest-worker/index.js:1:11661)
+    at ChildProcessWorker._onExit (/home/runner/workspace/node_modules/next/dist/compiled/jest-worker/index.js:1:12599)
+    at ChildProcess.emit (node:events:524:28)
+    at ChildProcess._handle.onexit (node:internal/c
+
+info  - Linting and checking validity of types ..Failed to compile.
+
+./components/Header/Header.tsx:43:7
+Type error: 'context' is possibly 'null'.
+
+  41 |       }
+  42 |     }
+> 43 |   }, [context.sharedState.portfolio.NavBar, context.sharedState.portfolio.NavBar.IntervalEvent]);
+     |       ^
+  44 | 
+  45 |   //Adding the EventListener for the NavBar
+Error: Call retries were exceeded
+    at ChildProcessWorker.initialize (/home/runner/workspace/node_modules/next/dist/compiled/jest-worker/index.js:1:11661)
+    at ChildProcessWorker._onExit (/home/runner/workspace/node_modules/next/dist/compiled/jest-worker/index.js:1:12599)
+    at ChildProcess.emit (node:events:524:28)
+
+info  - Linting and checking validity of types ..Failed to compile.
+
+./components/Header/Header.tsx:53:43
+Type error: No overload matches this call.
+  Overload 1 of 2, '(type: "scroll", listener: (this: Window, ev: Event) => any, options?: boolean | AddEventListenerOptions | undefined): void', gave the following error.
+    Argument of type '(() => void) | null' is not assignable to parameter of type '(this: Window, ev: Event) => any'.
+      Type 'null' is not assignable to type '(this: Window, ev: Event) => any'.
+  Overload 2 of 2, '(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions | undefined): void', gave the following error.
+    Argument of type '(() => void) | null' is not assignable to parameter of type 'EventListenerOrEventListenerObject'.
+      Type 'null' is not assignable to type 'EventListenerOrEventListenerObject'.
+
+  51 |       //Hide when scroll down & show when scroll up
+  52 |       if (typeof window !== "undefined") {
+> 53 |         window.addEventListener("scroll", context.sharedState.portfolio.NavBar.IntervalEvent);
+     |                                           ^
+  54 |       }
+  55 |     }
+  56 |   }, [context?.sharedState.portfolio.NavBar,
+Error: Call retries were exceeded
+    at ChildProcessWorker.initialize (/home/runner/workspace/node_modules/next/dist/compiled/jest-worker/index.js:1:11661)
+    at ChildProcessWorker._onExit (/home/runner/workspace/node_modules/next/dist/compiled/jest-worker/index.js:1:12599)
+    at ChildProcess.emit (node:events:524:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12) {
+  type: 'WorkerError'
+}
