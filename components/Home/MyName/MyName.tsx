@@ -11,7 +11,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
   return (
     <div
       id="homeSection"
-      className="h-screen w-full flex flex-col justify-center items-start px-6 sm:px-12 lg:px-16 xl:px-24 relative bg-gradient-to-br from-slate-900 via-gray-900 to-black"
+      className="min-h-screen w-full flex flex-col justify-center items-start px-6 sm:px-12 lg:px-16 xl:px-24 pt-20 sm:pt-24 relative bg-gradient-to-br from-slate-900 via-gray-900 to-black"
     >
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
