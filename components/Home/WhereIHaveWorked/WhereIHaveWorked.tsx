@@ -1,152 +1,157 @@
+
 import React from "react";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import ArrowIcon from "../../Icons/ArrowIcon";
-import HitaishinInfotech from "./Descriptions/HitaishinInfotech";
-import EmpowerSolutions from "./Descriptions/EmpowerSolutions";
-import HimanshuSoftech from "./Descriptions/HimanshuSoftech";
 
-import MangoITSolutions from "./Descriptions/MangoITSolutions";
 export default function WhereIHaveWorked() {
-  const barRef = React.useRef<HTMLDivElement>(null);
-  // ? INFORMATIONAL control the green position using px,
-  // ? INFORMATIONAL the default value of barRef's class should be at the beginning translate-y-[0px]
-  const GetDescription = () => {
-    switch (DescriptionJob) { 
-      case "MangoITSolutions":
-        return <MangoITSolutions />;
-      case "HitaishinInfotech":
-        return <HitaishinInfotech />;
-      case "EmpowerSolutions":
-        return <EmpowerSolutions />;
-      case "HimanshuSoftech":
-        return <HimanshuSoftech />;
+  const workExperience = [
+    {
+      company: "MangoITSolutions",
+      role: "Senior Full Stack Engineer & AI Specialist",
+      period: "Jan 2015 - Present",
+      website: "www.mangoitsolutions.com",
+      technologies: ["React.js", "Next.js", "Node.js", "Python", "AI/ML", "AWS", "MongoDB"],
+      experience: "Led development of scalable SaaS platforms and AI-integrated solutions. Specialized in full-stack architecture, microservices, and intelligent automation systems."
+    },
+    {
+      company: "HitaishinInfotech",
+      role: "Full Stack Developer",
+      period: "Dec 2014 - Jan 2015",
+      website: "www.hitaishinInfotech.com",
+      technologies: ["React.js", "Next.js", "Node.js", "Express.js", "MySQL"],
+      experience: "Developed dynamic web applications using modern JavaScript frameworks. Focused on front-end optimization and seamless user experiences."
+    },
+    {
+      company: "EmpowerSolutions",
+      role: "Web Developer",
+      period: "Dec 2012 - Jan 2014",
+      website: "www.empower-solutions.com",
+      technologies: ["WordPress", "PHP", "JavaScript", "MySQL", "CSS3"],
+      experience: "Built custom WordPress solutions and e-commerce platforms. Gained expertise in CMS development and client project management."
+    },
+    {
+      company: "HimanshuSoftech",
+      role: "Junior Web Developer",
+      period: "Nov 2011 - Nov 2012",
+      website: "www.himanshusofttech.com",
+      technologies: ["WordPress", "PHP", "HTML5", "CSS3", "JavaScript"],
+      experience: "Started career developing responsive websites and learning modern web development practices. Foundation in web technologies and client requirements."
     }
-  };
-  const [DescriptionJob, setDescriptionJob] = React.useState("MangoITSolutions");
-  return (
-    <div data-aos="fade-up" className="flex flex-col items-center justify-center py-24 space-y-12 bg-AAprimary bg-[url('/Bg-Grid.png')]">
-      {/* // ? Title "Where I've Worked" */}
-      <section className="flex flex-row items-center">
-        <div className="flex flex-row items-center">
-          <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 text-AAsecondary"} />
-          <span className="text-AAsecondary font-sans text-sm  sm:text-xl"> 02.</span>
-        </div>
+  ];
 
-        <span className="text-gray-300 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
+  return (
+    <div data-aos="fade-up" className="flex flex-col items-center justify-center py-24 space-y-12 bg-gradient-to-br from-slate-900 via-gray-900 to-black relative">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-32 right-32 w-48 h-48 bg-cyan-500 opacity-10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-32 left-32 w-64 h-64 bg-blue-500 opacity-10 rounded-full blur-3xl"></div>
+      </div>
+
+      {/* Title */}
+      <section className="flex flex-row items-center relative z-10">
+        <div className="flex flex-row items-center">
+          <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 text-cyan-400"} />
+          <span className="text-cyan-400 font-sans text-sm sm:text-xl"> 02.</span>
+        </div>
+        <span className="text-gray-200 font-bold tracking-wider text-lg md:text-2xl px-3">
           Where I&apos;ve Worked
         </span>
         <div className="bg-gray-400 h-[0.2px] w-16 sm:w-44 md:w-80"></div>
       </section>
-      {/* // ? Where I've Worked Content section */}
-      <section
-        className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0
-      justify-center md:justify-center items-center md:items-start "
-      >
-        {/* // ? Left side of Where I've Worked, contains the bar and name of companies */}
-        <CompaniesBar setDescriptionJob={setDescriptionJob} />
-        {/* // ? Description for The job */}
-        {GetDescription()}
+
+      {/* Work Experience Cards */}
+      <section className="relative z-10 max-w-6xl w-full px-6 sm:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {workExperience.map((job, index) => (
+            <motion.div
+              key={index}
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: index * 0.1, duration: 0.5 }}
+              className="bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-cyan-400/50 transition-all duration-300 hover:transform hover:scale-105"
+            >
+              {/* Company Header */}
+              <div className="mb-4">
+                <h3 className="text-white font-bold text-xl mb-1">{job.company}</h3>
+                <p className="text-cyan-400 font-semibold text-lg mb-2">{job.role}</p>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+                  <span className="text-gray-400 font-mono text-sm">{job.period}</span>
+                  <span 
+                    className="text-cyan-400 font-mono text-xs hover:cursor-pointer hover:underline"
+                    onClick={() => window.open(`https://${job.website}`, "_blank")}
+                  >
+                    {job.website}
+                  </span>
+                </div>
+              </div>
+
+              {/* Experience Description */}
+              <div className="mb-4">
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  {job.experience}
+                </p>
+              </div>
+
+              {/* Technologies */}
+              <div>
+                <p className="text-gray-400 text-xs font-mono mb-2">Technologies:</p>
+                <div className="flex flex-wrap gap-2">
+                  {job.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="px-3 py-1 bg-slate-700/50 text-cyan-400 rounded-full text-xs font-mono border border-slate-600 hover:border-cyan-400 transition-colors duration-300"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Experience Indicator */}
+              <div className="absolute top-4 right-4">
+                <div className="w-3 h-3 bg-cyan-400 rounded-full animate-pulse"></div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Career Summary */}
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          className="mt-12 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 backdrop-blur-sm border border-cyan-400/30 rounded-xl p-8 text-center"
+        >
+          <h3 className="text-cyan-400 font-bold text-2xl mb-4">Career Journey</h3>
+          <p className="text-gray-200 text-lg leading-relaxed max-w-4xl mx-auto">
+            From a junior developer crafting WordPress sites to a senior engineer architecting 
+            AI-powered platforms, my <span className="text-cyan-400 font-semibold">15+ year journey</span> spans 
+            the entire evolution of modern web development. Each role has strengthened my expertise in 
+            <span className="text-cyan-400 font-semibold"> full-stack development</span>, 
+            <span className="text-cyan-400 font-semibold"> AI integration</span>, and 
+            <span className="text-cyan-400 font-semibold"> scalable architecture</span>.
+          </p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+            <div className="text-center">
+              <div className="text-cyan-400 text-3xl font-bold">15+</div>
+              <div className="text-gray-300 text-sm">Years Experience</div>
+            </div>
+            <div className="text-center">
+              <div className="text-cyan-400 text-3xl font-bold">50+</div>
+              <div className="text-gray-300 text-sm">Projects Delivered</div>
+            </div>
+            <div className="text-center">
+              <div className="text-cyan-400 text-3xl font-bold">4</div>
+              <div className="text-gray-300 text-sm">Companies</div>
+            </div>
+            <div className="text-center">
+              <div className="text-cyan-400 text-3xl font-bold">10+</div>
+              <div className="text-gray-300 text-sm">Technologies</div>
+            </div>
+          </div>
+        </motion.div>
       </section>
     </div>
   );
 }
-
-const CompaniesBar = props => {
-  const [barPosition, setBarPosition] = React.useState<Number>(-4); // Green bar position by the default it's -20px
-  const [barAbovePosition, setBarAbovePosition] = React.useState<Number>(0);
-  const [companyNameBackgroundColorGreen, setCompanyNameBackgroundColorGreen] = React.useState<boolean[]>([
-    true,
-    false,
-    false,
-    false,
-  ]);
-  const CompanyButton = props => {
-    return (
-      <button
-        onClick={() => {
-          setBarPosition(props.BarPosition);
-          setBarAbovePosition(props.BarAvobePosition);
-          props.setDescriptionJob(props.DescriptionJob);
-          setCompanyNameBackgroundColorGreen(props.CompanyNameBackgroundColorGreen);
-        }}
-        className={`flex-none sm:text-sm text-xs text-center md:text-left  hover:text-AAsecondary
-             hover:bg-ResumeButtonHover rounded  font-mono  
-             py-3 md:pl-6 md:px-4 md:w-44 w-32 duration-500 
-             ${
-               companyNameBackgroundColorGreen[props.ButtonOrderOfcompanyNameBackgroundColorGreen]
-                 ? "bg-ResumeButtonHover text-AAsecondary"
-                 : "text-gray-500"
-             }`}
-      >
-        {props.CompanyName}
-      </button>
-    );
-  };
-
-  return (
-    <div
-      id="WhereIhaveWorkedSection"
-      className=" flex flex-col md:flex-row  w-screen lg:w-auto 
-      overflow-auto scrollbar-hide md:overflow-hidden pb-4 md:pb-0 justify-start
-       sm:justify-center items-start sm:items-center "
-    >
-      {/* // ? left bar Holder */}
-      <div
-        className=" hidden md:block bg-gray-500 relative h-0.5 w-34 md:h-[170px] translate-y-1 md:w-0.5  
-        rounded md:order-1 order-2  "
-      >
-        {/* // ? animated left bar */}
-        <motion.div
-          animate={{ y: barPosition }}
-          // ref={barRef}
-          className={`absolute w-10 h-0.5 md:w-0.5 md:h-12 rounded bg-AAsecondary `}
-        ></motion.div>
-      </div>
-      {/* // ? Companies name as buttons */}
-      <div className="flex flex-col md:order-2 order-1 space-y-1 pl-8 md:pl-0 ">
-        <div className="flex flex-row md:flex-col">
-        <CompanyButton
-            ButtonOrderOfcompanyNameBackgroundColorGreen={0}
-            CompanyName="MangoITSolutions"
-            BarPosition={-12}
-            BarAvobePosition={1}
-            DescriptionJob="MangoITSolutions"
-            CompanyNameBackgroundColorGreen={[true,false, false, false, false, false]}
-            setDescriptionJob={props.setDescriptionJob}
-          />
-          <CompanyButton
-            ButtonOrderOfcompanyNameBackgroundColorGreen={1}
-            CompanyName="HitaishinInfotech"
-            BarPosition={32}
-            BarAvobePosition={129}
-            DescriptionJob="HitaishinInfotech"
-            CompanyNameBackgroundColorGreen={[false,true, false, false, false, false]}
-            setDescriptionJob={props.setDescriptionJob}
-          />
-          <CompanyButton
-            ButtonOrderOfcompanyNameBackgroundColorGreen={2}
-            CompanyName="EmpowerSolutions"
-            BarPosition={76}
-            BarAvobePosition={257}
-            DescriptionJob="EmpowerSolutions"
-            CompanyNameBackgroundColorGreen={[false,false, true, false, false, false]}
-            setDescriptionJob={props.setDescriptionJob}
-          />
-          <CompanyButton
-            ButtonOrderOfcompanyNameBackgroundColorGreen={3}
-            CompanyName="HimanshuSoftech"
-            BarPosition={120}
-            BarAvobePosition={385}
-            DescriptionJob="HimanshuSoftech"
-            CompanyNameBackgroundColorGreen={[false, false, false, true, false, false]}
-            setDescriptionJob={props.setDescriptionJob}
-          />
-          
-        </div>
-        <div className="block md:hidden h-0.5 rounded bg-gray-500">
-          <motion.div animate={{ x: barAbovePosition }} className="w-[128px] h-0.5 rounded bg-AAsecondary"></motion.div>
-        </div>
-      </div>
-    </div>
-  );
-};
