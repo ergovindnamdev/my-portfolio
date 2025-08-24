@@ -16,8 +16,8 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         }}
         transition={{
           type: "spring",
-          duration: props.finishedLoading ? 0 : 0.8,
-          delay: props.finishedLoading ? 0 : 1,
+          duration: props.finishedLoading ? 0 : 1.2,
+          delay: props.finishedLoading ? 0 : 5.4,
         }}
         className=" text-AAsecondary"
        
@@ -37,8 +37,8 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         }}
         transition={{
           type: "spring",
-          duration: props.finishedLoading ? 0 : 0.8,
-          delay: props.finishedLoading ? 0 : 1.2,
+          duration: props.finishedLoading ? 0 : 1.2,
+          delay: props.finishedLoading ? 0 : 5.7,
         }}
         className="text-AAsecondary"
        
@@ -59,8 +59,8 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         }}
         transition={{
           type: "spring",
-          duration: props.finishedLoading ? 0 : 0.8,
-          delay: props.finishedLoading ? 0 : 1.4,
+          duration: props.finishedLoading ? 0 : 1.2,
+          delay: props.finishedLoading ? 0 : 5.8,
         }}
         className="text-AAsecondary"
       >
@@ -81,8 +81,8 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         }}
         transition={{
           type: "spring",
-          duration: props.finishedLoading ? 0 : 0.8,
-          delay: props.finishedLoading ? 0 : 1.6,
+          duration: props.finishedLoading ? 0 : 1.2,
+          delay: props.finishedLoading ? 0 : 5.9,
         }}
         className="text-AAsecondary"
       >
@@ -102,11 +102,11 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         }}
         transition={{
           type: "spring",
-          duration: props.finishedLoading ? 0 : 0.8,
-          delay: props.finishedLoading ? 0 : 1.8,
+          duration: props.finishedLoading ? 0 : 1.2,
+          delay: props.finishedLoading ? 0 : 6.1,
         }}
         // onClick={()=>{router.push("/resume.pdf")}}
-        className="text-AAsecondary border border-spacing-2 py-2 px-3 rounded border-AAsecondary hover:bg-AAsecondary hover:text-AAprimary transition-colors duration-200"
+        className="text-AAsecondary border border-spacing-2 py-2 px-3 rounded-sm border-AAsecondary hover:bg-ResumeButtonHover"
       >
         Resume
       </motion.button>
