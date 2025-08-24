@@ -9,8 +9,17 @@ export default function WhereIHaveWorked() {
       role: "Senior Full Stack Engineer & AI Specialist",
       period: "Jan 2015 - Present",
       website: "www.mangoitsolutions.com",
-      technologies: ["React.js", "Next.js", "Node.js", "Python", "AI/ML", "AWS", "MongoDB"],
-      experience: "Led development of scalable SaaS platforms and AI-integrated solutions. Specialized in full-stack architecture, microservices, and intelligent automation systems."
+      technologies: [
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "Python",
+        "AI/ML",
+        "AWS",
+        "MongoDB",
+      ],
+      experience:
+        "Led development of scalable SaaS platforms and AI-integrated solutions. Specialized in full-stack architecture, microservices, and intelligent automation systems.",
     },
     {
       company: "HitaishinInfotech",
@@ -18,7 +27,8 @@ export default function WhereIHaveWorked() {
       period: "Dec 2014 - Jan 2015",
       website: "www.hitaishinInfotech.com",
       technologies: ["React.js", "Next.js", "Node.js", "Express.js", "MySQL"],
-      experience: "Developed dynamic web applications using modern JavaScript frameworks. Focused on front-end optimization and seamless user experiences."
+      experience:
+        "Developed dynamic web applications using modern JavaScript frameworks. Focused on front-end optimization and seamless user experiences.",
     },
     {
       company: "EmpowerSolutions",
@@ -26,7 +36,8 @@ export default function WhereIHaveWorked() {
       period: "Dec 2012 - Jan 2014",
       website: "www.empower-solutions.com",
       technologies: ["WordPress", "PHP", "JavaScript", "MySQL", "CSS3"],
-      experience: "Built custom WordPress solutions and e-commerce platforms. Gained expertise in CMS development and client project management."
+      experience:
+        "Built custom WordPress solutions and e-commerce platforms. Gained expertise in CMS development and client project management.",
     },
     {
       company: "HimanshuSoftech",
@@ -34,12 +45,16 @@ export default function WhereIHaveWorked() {
       period: "Nov 2011 - Nov 2012",
       website: "www.himanshusofttech.com",
       technologies: ["WordPress", "PHP", "HTML5", "CSS3", "JavaScript"],
-      experience: "Started career developing responsive websites and learning modern web development practices. Foundation in web technologies and client requirements."
-    }
+      experience:
+        "Started career developing responsive websites and learning modern web development practices. Foundation in web technologies and client requirements.",
+    },
   ];
 
   return (
-    <div data-aos="fade-up" className="flex flex-col items-center justify-center py-24 space-y-12 bg-gradient-to-br from-slate-900 via-gray-900 to-black relative">
+    <div
+      data-aos="fade-up"
+      className="flex flex-col items-center justify-center py-24 space-y-12 bg-gradient-to-br from-slate-900 via-gray-900 to-black relative"
+    >
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-32 right-32 w-48 h-48 bg-cyan-500 opacity-10 rounded-full blur-3xl"></div>
@@ -49,8 +64,10 @@ export default function WhereIHaveWorked() {
       {/* Title */}
       <section className="flex flex-row items-center relative z-10">
         <div className="flex flex-row items-center">
-          <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 text-cyan-400"} />
-          <span className="text-cyan-400 font-mono text-lg mb-2 block">&gt; 2</span>
+          <ArrowIcon
+            className={"flex-none h-4 md:h-6 w-4 md:w-5 text-cyan-400"}
+          />
+          <span className="text-cyan-400 font-mono text-lg mb-2 block">2</span>
         </div>
         <span className="text-gray-200 font-bold tracking-wider text-lg md:text-2xl px-3">
           Where I&apos;ve Worked
@@ -71,13 +88,21 @@ export default function WhereIHaveWorked() {
             >
               {/* Company Header */}
               <div className="mb-4">
-                <h3 className="text-white font-bold text-xl mb-1">{job.company}</h3>
-                <p className="text-cyan-400 font-semibold text-lg mb-2">{job.role}</p>
+                <h3 className="text-white font-bold text-xl mb-1">
+                  {job.company}
+                </h3>
+                <p className="text-cyan-400 font-semibold text-lg mb-2">
+                  {job.role}
+                </p>
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
-                  <span className="text-gray-400 font-mono text-sm">{job.period}</span>
-                  <span 
+                  <span className="text-gray-400 font-mono text-sm">
+                    {job.period}
+                  </span>
+                  <span
                     className="text-cyan-400 font-mono text-xs hover:cursor-pointer hover:underline"
-                    onClick={() => window.open(`https://${job.website}`, "_blank")}
+                    onClick={() =>
+                      window.open(`https://${job.website}`, "_blank")
+                    }
                   >
                     {job.website}
                   </span>
@@ -93,7 +118,9 @@ export default function WhereIHaveWorked() {
 
               {/* Technologies */}
               <div>
-                <p className="text-gray-400 text-xs font-mono mb-2">Technologies:</p>
+                <p className="text-gray-400 text-xs font-mono mb-2">
+                  Technologies:
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {job.technologies.map((tech, techIndex) => (
                     <span
@@ -121,14 +148,29 @@ export default function WhereIHaveWorked() {
           transition={{ delay: 0.5, duration: 0.5 }}
           className="mt-12 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 backdrop-blur-sm border border-cyan-400/30 rounded-xl p-8 text-center"
         >
-          <h3 className="text-cyan-400 font-bold text-2xl mb-4">Career Journey</h3>
+          <h3 className="text-cyan-400 font-bold text-2xl mb-4">
+            Career Journey
+          </h3>
           <p className="text-gray-200 text-lg leading-relaxed max-w-4xl mx-auto">
-            From a junior developer crafting WordPress sites to a senior engineer architecting 
-            AI-powered platforms, my <span className="text-cyan-400 font-semibold">15+ year journey</span> spans 
-            the entire evolution of modern web development. Each role has strengthened my expertise in 
-            <span className="text-cyan-400 font-semibold"> full-stack development</span>, 
-            <span className="text-cyan-400 font-semibold"> AI integration</span>, and 
-            <span className="text-cyan-400 font-semibold"> scalable architecture</span>.
+            From a junior developer crafting WordPress sites to a senior
+            engineer architecting AI-powered platforms, my{" "}
+            <span className="text-cyan-400 font-semibold">
+              15+ year journey
+            </span>{" "}
+            spans the entire evolution of modern web development. Each role has
+            strengthened my expertise in
+            <span className="text-cyan-400 font-semibold">
+              {" "}
+              full-stack development
+            </span>
+            ,
+            <span className="text-cyan-400 font-semibold"> AI integration</span>
+            , and
+            <span className="text-cyan-400 font-semibold">
+              {" "}
+              scalable architecture
+            </span>
+            .
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">

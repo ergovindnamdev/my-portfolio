@@ -28,7 +28,7 @@ export default function AboutMe(props) {
           <div className="flex flex-row items-center mr-6">
             <ArrowIcon className="h-4 md:h-6 w-4 md:w-5 text-cyan-400" />
             <span className="text-cyan-400 font-mono text-lg sm:text-xl ml-2">
-              &gt; 1
+              1
             </span>
             <span className="text-white font-bold tracking-wide text-2xl sm:text-3xl lg:text-4xl pl-4">
               About Me
@@ -80,7 +80,9 @@ export default function AboutMe(props) {
                   SaaS platforms
                 </span>
                 ,{" "}
-                <span className="text-cyan-400 font-semibold">eCommerce systems</span>
+                <span className="text-cyan-400 font-semibold">
+                  eCommerce systems
+                </span>
                 , and{" "}
                 <span className="text-cyan-400 font-semibold">mobile apps</span>
                 . With{" "}
