@@ -1,248 +1,124 @@
-import React, { useRef, useState } from "react";
+
+import React from "react";
 import ArrowIcon from "../../Icons/ArrowIcon";
-import emailjs from "@emailjs/browser";
 
 export default function GetInTouch() {
-  const form = useRef();
-  const [submitted, setSubmitted] = useState(false);
-
-  // State for form inputs
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phoneNumber: "",
-    message: "",
-  });
-
-  // Handle input change
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const resetForm = () => {
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phoneNumber: "",
-      message: "",
-    });
-  };
-
-  // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Perform form validation or API call
-    console.log(formData); // Just logging data here for demonstration
-
-    emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_EMAIL_SERVICE,
-        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE1,
-        form.current,
-        {
-          publicKey: process.env.NEXT_PUBLIC_EMAIL_PUBLICKEEY,
-        }
-      )
-      .then(
-        () => {
-          setSubmitted(true);
-          resetForm(); // Clear form data on successful submission
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
-
-    emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_EMAIL_SERVICE,
-        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE2,
-        form.current,
-        {
-          publicKey: process.env.NEXT_PUBLIC_EMAIL_PUBLICKEEY,
-        }
-      )
-      .then(
-        () => {
-          setSubmitted(true);
-          resetForm(); // Clear form data on successful submission
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
-  };
-
   return (
     <div
       id="GetInTouchSection"
       data-aos="fade-up"
-      className="flex flex-col space-y-4 w-full py-20 h-150 items-center bg-AAprimary bg-[url('/Bg-Grid.png')]"
+      className="flex flex-col space-y-8 w-full py-20 items-center bg-gradient-to-br from-slate-900 via-gray-900 to-black relative overflow-hidden"
     >
-      {/* // ? Title === > What's Next?  */}
-      <div className="flex flex-row items-center ">
-        <ArrowIcon className="flex-none h-5 md:h-6 w-5 md:w-5 text-AAsecondary" />
-        <div className="flex flex-row space-x-2 items-center">
-          <span className="text-AAsecondary font-sans text-sm  sm:text-base">
-            {" "}
-            04.
-          </span>
-          <span className=" font-sans text-AAsecondary text-base">
-            What&apos;s Next?
-          </span>
-        </div>
+      {/* Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 right-20 w-96 h-96 bg-cyan-500 opacity-5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-500 opacity-5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] bg-purple-500 opacity-5 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
       </div>
-      {/* // ? Get In Touch */}
-      <span className="text-gray-200 text-3xl sm:text-4xl font-bold tracking-wider opacity-85">
-        Get In Touch
-      </span>
-      <p className="flex font-Header tracking-wider text-gray-400 text-center px-6 sm:px-16 md:px-0 md:w-[600px]">
-        I&apos;m always open to new opportunities and my inbox is always
-        welcoming. Whether you have a question or simply want to say hello, I’ll
-        do my utmost to respond promptly!
-      </p>
-      <div className="">
-        {/* <a href="mailto:ergovindnamdev@gmail.com" target={"_blank"} rel="noreferrer">
-          <button
-            className="font-mono text-sm text-AAsecondary border-AAsecondary 
-                            px-8 py-4 border-[1.5px] rounded "
-          >
-            Say Hello
-          </button>
-        </a> */}
 
-        <div className="isolate px-2 py-12 sm:py-2 lg:px-2">
-          <div
-            className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
-            aria-hidden="true"
-          ></div>
-          {submitted ? (
-            <div className="text-center">
-              <h3 className="text-gray-400 text-2xl font-bold">
-                Thank you for getting in touch!
-              </h3>
-              <p className="text-gray-400">I will get back to you soon.</p>
-            </div>
-          ) : (
-            <form
-              onSubmit={handleSubmit}
-              ref={form}
-              method="POST"
-              className="mx-auto max-w-xl"
+      <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-12 text-center">
+        {/* Section Header */}
+        <div className="flex flex-row items-center justify-center mb-8">
+          <ArrowIcon className="flex-none h-5 md:h-6 w-5 md:w-5 text-cyan-400" />
+          <div className="flex flex-row space-x-2 items-center ml-4">
+            <span className="text-cyan-400 font-mono text-sm sm:text-base">04.</span>
+            <span className="font-mono text-cyan-400 text-base">What's Next?</span>
+          </div>
+        </div>
+
+        {/* Main Title */}
+        <h2 className="text-white text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+          Let's Build Something
+          <span className="block text-cyan-400">Amazing Together</span>
+        </h2>
+
+        {/* Description */}
+        <p className="text-gray-300 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed mb-12">
+          Ready to turn your ideas into reality? I'm here to help you build scalable solutions, 
+          implement AI features, or tackle complex technical challenges. Let's discuss your project 
+          and explore how we can work together.
+        </p>
+
+        {/* Value Propositions */}
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-cyan-400/30 transition-all duration-300">
+            <div className="text-cyan-400 text-3xl mb-4">🚀</div>
+            <h3 className="text-white font-semibold text-lg mb-2">Rapid Development</h3>
+            <p className="text-gray-400 text-sm">Fast-track your project with proven architectures and best practices</p>
+          </div>
+          
+          <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-cyan-400/30 transition-all duration-300">
+            <div className="text-cyan-400 text-3xl mb-4">🤖</div>
+            <h3 className="text-white font-semibold text-lg mb-2">AI Integration</h3>
+            <p className="text-gray-400 text-sm">Leverage cutting-edge AI and machine learning capabilities</p>
+          </div>
+          
+          <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-cyan-400/30 transition-all duration-300">
+            <div className="text-cyan-400 text-3xl mb-4">📈</div>
+            <h3 className="text-white font-semibold text-lg mb-2">Scalable Solutions</h3>
+            <p className="text-gray-400 text-sm">Build for growth with cloud-native and microservices architecture</p>
+          </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="bg-gradient-to-r from-slate-800/60 to-gray-800/60 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 mb-8">
+          <h3 className="text-white text-2xl font-bold mb-4">Ready to Start Your Project?</h3>
+          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+            Book a free 30-minute consultation to discuss your project requirements, 
+            timeline, and how I can help bring your vision to life.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="https://calendly.com/govind-namdev/project-discussion"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-block"
             >
-              <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                {/* First Name */}
-                <div>
-                  <label
-                    htmlFor="first-name"
-                    className="block text-sm font-semibold leading-6 text-gray-900"
-                  >
-                    First name<span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    name="firstName"
-                    id="first-name"
-                    autoComplete="given-name"
-                    required
-                    className="block w-full rounded-md border-AAsecondary-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-AAsecondary sm:text-sm"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                  />
-                </div>
-                {/* Last Name */}
-                <div>
-                  <label
-                    htmlFor="last-name"
-                    className="block text-sm font-semibold leading-6 text-gray-900"
-                  >
-                    Last name<span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    name="lastName"
-                    id="last-name"
-                    autoComplete="family-name"
-                    required
-                    className="block w-full rounded-md border-AAsecondary-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-AAsecondary sm:text-sm"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                  />
-                </div>
-                {/* Email */}
-                <div className="sm:col-span-2">
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-semibold leading-6 text-gray-900"
-                  >
-                    Email<span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    autoComplete="email"
-                    required
-                    className="block w-full rounded-md border-AAsecondary-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-AAsecondary sm:text-sm"
-                    value={formData.email}
-                    onChange={handleChange}
-                  />
-                </div>
-                {/* Phone Number */}
-                <div className="sm:col-span-2">
-                  <label
-                    htmlFor="phone-number"
-                    className="block text-sm font-semibold leading-6 text-gray-900"
-                  >
-                    Phone number<span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="tel"
-                    name="phoneNumber"
-                    id="phone-number"
-                    autoComplete="tel"
-                    required
-                    className="block w-full rounded-md border-AAsecondary-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-AAsecondary sm:text-sm"
-                    value={formData.phoneNumber}
-                    onChange={handleChange}
-                  />
-                </div>
-                {/* Message */}
-                <div className="sm:col-span-2">
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-semibold leading-6 text-gray-900"
-                  >
-                    Message<span className="text-red-500">*</span>
-                  </label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    rows={4}
-                    required
-                    className="block w-full rounded-md border-AAsecondary-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-AAsecondary sm:text-sm"
-                    value={formData.message}
-                    onChange={handleChange}
-                  ></textarea>
-                </div>
-                {/* Submit Button */}
-                <div className="mt-10">
-                  <button
-                    type="submit"
-                    className="block w-full rounded-md bg-white px-3.5 py-2.5 text-center text-sm shadow-sm font-mono text-sm text-AAsecondary border-AAsecondary px-8 py-4 border-[1.5px] rounded"
-                  >
-                    Let&apos;s talk
-                  </button>
-                </div>
-              </div>
-            </form>
-          )}
+              <button className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-8 py-4 rounded-lg font-mono text-sm hover:from-cyan-400 hover:to-blue-400 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-cyan-400/25 hover:scale-105 flex items-center space-x-2">
+                <span>📅</span>
+                <span>Schedule a Call</span>
+              </button>
+            </a>
+            
+            <div className="text-gray-400 text-sm">or</div>
+            
+            <a
+              href="https://wa.me/+919993583578?text=Hi%20Govind,%20I'd%20like%20to%20discuss%20a%20project%20with%20you."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-block"
+            >
+              <button className="bg-transparent border-2 border-cyan-400 text-cyan-400 px-8 py-4 rounded-lg font-mono text-sm hover:bg-cyan-400 hover:text-black transition-all duration-300 group-hover:shadow-lg group-hover:shadow-cyan-400/25 hover:scale-105 flex items-center space-x-2">
+                <span>💬</span>
+                <span>Quick Chat on WhatsApp</span>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        {/* Contact Information */}
+        <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+          <div className="text-center">
+            <div className="text-cyan-400 text-sm font-mono mb-2">Email</div>
+            <a 
+              href="mailto:ergovindnamdev@gmail.com" 
+              className="text-gray-300 hover:text-cyan-400 transition-colors duration-300"
+            >
+              ergovindnamdev@gmail.com
+            </a>
+          </div>
+          
+          <div className="text-center">
+            <div className="text-cyan-400 text-sm font-mono mb-2">Response Time</div>
+            <div className="text-gray-300">Usually within 24 hours</div>
+          </div>
+        </div>
+
+        {/* Availability Status */}
+        <div className="mt-8 inline-flex items-center space-x-2 bg-green-500/10 border border-green-500/20 rounded-full px-4 py-2">
+          <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+          <span className="text-green-400 text-sm font-mono">Available for new projects</span>
         </div>
       </div>
     </div>
