@@ -1,4 +1,3 @@
-
 import React, { useContext } from "react";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import Link from "next/link";
@@ -99,7 +98,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
               Connect on LinkedIn
             </button>
           </a>
-          
+
           <a
             href="https://wa.me/+918989901702"
             target="_blank"

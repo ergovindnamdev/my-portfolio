@@ -77,7 +77,7 @@ const Header = (props: { finishedLoading: boolean,sectionsRef }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ opacity: { delay: props.finishedLoading ? 0 : 5.4, duration: 0 } }}
-        className={`w-full fixed top-0 left-0 ${ShowElement ? `backdrop-blur-md bg-slate-900/90 shadow-xl` : `bg-transparent `} flex 
+        className={`w-full fixed top-0 left-0 ${ShowElement ? `backdrop-blur-md bg-slate-900/95 shadow-xl` : `backdrop-blur-sm bg-slate-900/80 `} flex 
       justify-between items-center px-6 sm:px-12 py-3 sm:py-4 transition-all duration-300 translate-y-0 z-50`}
       >
         {/* Logo A */}
