@@ -80,9 +80,7 @@ export default function AboutMe(props) {
                   SaaS platforms
                 </span>
                 ,{" "}
-                <span className="text-cyan-400 font-semibold">
-                  eCommerce systems
-                </span>
+                <span className="text-cyan-400 font-semibold">eCommerce systems</span>
                 , and{" "}
                 <span className="text-cyan-400 font-semibold">mobile apps</span>
                 . With{" "}
