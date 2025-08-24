@@ -62,17 +62,15 @@ export default function WhereIHaveWorked() {
       </div>
 
       {/* Title */}
-      <section className="flex flex-row items-center relative z-10">
-        <div className="flex flex-row items-center">
-          <ArrowIcon
-            className={"flex-none h-4 md:h-6 w-4 md:w-5 text-cyan-400"}
-          />
-          <span className="text-cyan-400 font-mono text-lg mb-2 block">2</span>
+      <section className="flex flex-row items-center relative z-10 md:px-0 mb-12">
+        <ArrowIcon className="flex-none h-5 md:h-6 w-5 md:w-5 translate-y-[2px] text-cyan-400" />
+        <div className="flex-none flex-row space-x-2 items-center pr-2">
+          <span className="text-cyan-400 font-mono text-sm sm:text-xl">02.</span>
+          <span className="font-bold tracking-wider text-white text-lg md:text-2xl opacity-90">
+            Where I&apos;ve Worked
+          </span>
         </div>
-        <span className="text-gray-200 font-bold tracking-wider text-lg md:text-2xl px-3">
-          Where I&apos;ve Worked
-        </span>
-        <div className="bg-gray-400 h-[0.2px] w-16 sm:w-44 md:w-80"></div>
+        <div className="bg-gray-600 h-[0.2px] w-full xl:w-1/3 md:w-1/2"></div>
       </section>
 
       {/* Work Experience Cards */}
