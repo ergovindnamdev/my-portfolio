@@ -55,10 +55,13 @@ export default function Home() {
   }, []);
 
   const meta = {
-    title: "Govind Namdev - Full Stack Enginear",
-    description: `I've been working on Software development for 5 years straight. Get in touch with me to know more.`,
-    image: "/titofCercle.png",
+    title: "Govind Namdev - Full Stack Engineer & AI Specialist | 15+ Years Experience",
+    description: `Full Stack Engineer with 15+ years experience building scalable SaaS platforms, eCommerce systems, and AI-powered applications. Expert in React.js, Node.js, Python, AWS, and modern web technologies.`,
+    image: "/img/My-Pic.JPG",
     type: "website",
+    keywords: "Full Stack Developer, Software Engineer, React Developer, Node.js Developer, AI Specialist, SaaS Development, Web Development, Govind Namdev",
+    author: "Govind Namdev",
+    canonical: "https://govindnam.dev",
   };
   const isProd = process.env.NODE_ENV === "production";
 
@@ -66,20 +69,75 @@ export default function Home() {
     <>
       <Head>
         <title>{meta.title}</title>
-        <meta name="robots" content="follow, index" />
-        <meta content={meta.description} name="description" />
-        <meta property="og:url" content={`https://govindnam.dev`} />
-        <link rel="canonical" href={`https://govindnam.dev`} />
+        <meta name="description" content={meta.description} />
+        <meta name="keywords" content={meta.keywords} />
+        <meta name="author" content={meta.author} />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="Content-Language" content="en" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href={meta.canonical} />
+        
+        {/* Open Graph / Facebook */}
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Govind Namdev" />
-        <meta property="og:description" content={meta.description} />
+        <meta property="og:url" content={meta.canonical} />
         <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.image} />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:image" content={`${meta.canonical}${meta.image}`} />
+        <meta property="og:image:alt" content="Govind Namdev - Full Stack Engineer" />
+        <meta property="og:site_name" content="Govind Namdev Portfolio" />
+        <meta property="og:locale" content="en_US" />
+        
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@titofabdo" />
+        <meta name="twitter:url" content={meta.canonical} />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.image} />
+        <meta name="twitter:image" content={`${meta.canonical}${meta.image}`} />
+        <meta name="twitter:creator" content="@govindnamdev" />
+        
+        {/* Additional SEO */}
+        <meta name="theme-color" content="#0891b2" />
+        <meta name="msapplication-TileColor" content="#0891b2" />
+        
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Govind Namdev",
+              "jobTitle": "Full Stack Engineer & AI Specialist",
+              "description": meta.description,
+              "url": meta.canonical,
+              "image": `${meta.canonical}${meta.image}`,
+              "sameAs": [
+                "https://www.linkedin.com/in/govind-namdev-42945137/",
+                "https://github.com/ergovindnamdev"
+              ],
+              "knowsAbout": [
+                "Full Stack Development",
+                "React.js",
+                "Node.js",
+                "Python",
+                "Artificial Intelligence",
+                "Machine Learning",
+                "AWS",
+                "TypeScript",
+                "SaaS Development",
+                "Web Development"
+              ],
+              "workLocation": {
+                "@type": "Place",
+                "name": "Remote"
+              },
+              "email": "ergovindnamdev@gmail.com",
+              "telephone": "+919993583578"
+            })
+          }}
+        />
       </Head>
 
       
