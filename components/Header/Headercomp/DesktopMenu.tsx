@@ -22,7 +22,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         className="text-slate-300"
       >
         <ReactScrollLink to="aboutSection" spy={true} smooth={true} offset={-100} duration={200}>
-          <span className="text-cyan-400 mr-1">&gt; 01.</span>
+          <span className="text-cyan-400 mr-1">&gt; 1</span>
           <span className="hover:cursor-pointer text-slate-300 hover:text-cyan-400 transition-colors duration-300">About</span>
         </ReactScrollLink>
       </motion.div>
@@ -43,7 +43,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         className="text-slate-300"
       >
         <ReactScrollLink to="WhereIhaveWorkedSection" spy={true} smooth={true} offset={-300} duration={200}>
-          <span className="text-cyan-400 mr-1">&gt; 02.</span>
+          <span className="text-cyan-400 mr-1">&gt; 2</span>
           <span className="hover:cursor-pointer text-slate-300 hover:text-cyan-400 transition-colors duration-300">Experience</span>
         </ReactScrollLink>
       </motion.div>
@@ -64,7 +64,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         className="text-slate-300"
       >
         <ReactScrollLink to="SomethingIveBuiltSection" spy={true} smooth={true} offset={-100} duration={200}>
-          <span className="text-cyan-400 mr-1">&gt; 03.</span>
+          <span className="text-cyan-400 mr-1">&gt; 3</span>
           <span className="hover:cursor-pointer text-slate-300 hover:text-cyan-400 transition-colors duration-300">Work</span>
         </ReactScrollLink>
       </motion.div>
@@ -85,7 +85,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         className="text-slate-300"
       >
          <ReactScrollLink to="GetInTouchSection" spy={true} smooth={true} offset={-100} duration={200}>
-           <span className="text-cyan-400 mr-1">&gt; 04.</span>
+           <span className="text-cyan-400 mr-1">&gt; 4</span>
            <span className="hover:cursor-pointer text-slate-300 hover:text-cyan-400 transition-colors duration-300">Contact</span>
         </ReactScrollLink>
       </motion.span>
@@ -110,7 +110,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         Resume
       </motion.button>
       </a>
-      
+
     </div>
   );
 }

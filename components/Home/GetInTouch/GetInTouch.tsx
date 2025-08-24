@@ -1,4 +1,3 @@
-
 import React from "react";
 import ArrowIcon from "../../Icons/ArrowIcon";
 
@@ -21,7 +20,7 @@ export default function GetInTouch() {
         <div className="flex flex-row items-center justify-center mb-8">
           <ArrowIcon className="flex-none h-5 md:h-6 w-5 md:w-5 text-cyan-400" />
           <div className="flex flex-row space-x-2 items-center ml-4">
-            <span className="text-cyan-400 font-mono text-sm sm:text-base">04.</span>
+            <span className="text-cyan-400 font-mono text-sm sm:text-base">&gt; 4</span>
             <span className="font-mono text-cyan-400 text-base">What's Next?</span>
           </div>
         </div>
@@ -46,13 +45,13 @@ export default function GetInTouch() {
             <h3 className="text-white font-semibold text-lg mb-2">Rapid Development</h3>
             <p className="text-gray-400 text-sm">Fast-track your project with proven architectures and best practices</p>
           </div>
-          
+
           <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-cyan-400/30 transition-all duration-300">
             <div className="text-cyan-400 text-3xl mb-4">🤖</div>
             <h3 className="text-white font-semibold text-lg mb-2">AI Integration</h3>
             <p className="text-gray-400 text-sm">Leverage cutting-edge AI and machine learning capabilities</p>
           </div>
-          
+
           <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-cyan-400/30 transition-all duration-300">
             <div className="text-cyan-400 text-3xl mb-4">📈</div>
             <h3 className="text-white font-semibold text-lg mb-2">Scalable Solutions</h3>
@@ -67,7 +66,7 @@ export default function GetInTouch() {
             Book a free 30-minute consultation to discuss your project requirements, 
             timeline, and how I can help bring your vision to life.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="https://calendly.com/ergovindnamdev/30min"
@@ -80,9 +79,9 @@ export default function GetInTouch() {
                 <span>Schedule a Call</span>
               </button>
             </a>
-            
+
             <div className="text-gray-400 text-sm">or</div>
-            
+
             <a
               href="https://wa.me/+919993583578?text=Hi%20Govind,%20I'd%20like%20to%20discuss%20a%20project%20with%20you."
               target="_blank"
@@ -108,7 +107,7 @@ export default function GetInTouch() {
               ergovindnamdev@gmail.com
             </a>
           </div>
-          
+
           <div className="text-center">
             <div className="text-cyan-400 text-sm font-mono mb-2">Response Time</div>
             <div className="text-gray-300">Usually within 24 hours</div>

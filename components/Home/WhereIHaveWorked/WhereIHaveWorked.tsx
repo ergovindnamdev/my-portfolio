@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import ArrowIcon from "../../Icons/ArrowIcon";
@@ -51,7 +50,7 @@ export default function WhereIHaveWorked() {
       <section className="flex flex-row items-center relative z-10">
         <div className="flex flex-row items-center">
           <ArrowIcon className={"flex-none h-4 md:h-6 w-4 md:w-5 text-cyan-400"} />
-          <span className="text-cyan-400 font-sans text-sm sm:text-xl"> 02.</span>
+          <span className="text-cyan-400 font-mono text-lg mb-2 block">&gt; 2</span>
         </div>
         <span className="text-gray-200 font-bold tracking-wider text-lg md:text-2xl px-3">
           Where I&apos;ve Worked
@@ -131,7 +130,7 @@ export default function WhereIHaveWorked() {
             <span className="text-cyan-400 font-semibold"> AI integration</span>, and 
             <span className="text-cyan-400 font-semibold"> scalable architecture</span>.
           </p>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
             <div className="text-center">
               <div className="text-cyan-400 text-3xl font-bold">15+</div>
