@@ -1,64 +1,57 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 
 export default function Startup() {
   return (
-    <div className="absolute bg-AAprimary flex flex-col justify-center items-center w-full h-screen z-50">
-      <motion.div
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="flex flex-col items-center space-y-8"
-      >
-        {/* Modern circular loading indicator */}
-        <div className="relative">
-          <motion.div
-            className="w-16 h-16 border-4 border-gray-600 rounded-full"
-            initial={{ borderTopColor: "transparent" }}
-            animate={{ 
-              borderTopColor: "#64ffda",
-              rotate: 360 
-            }}
-            transition={{ 
-              rotate: { duration: 1.5, repeat: Infinity, ease: "linear" },
-              borderTopColor: { duration: 0.8, ease: "easeOut" }
-            }}
-          />
-          <motion.div
-            className="absolute inset-0 w-16 h-16 border-4 border-transparent border-t-AAsecondary rounded-full"
-            animate={{ rotate: -360 }}
-            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-          />
-        </div>
-
-        {/* Loading text */}
+    <div className="bg-gradient-to-br from-slate-900 via-gray-900 to-black w-full h-screen flex flex-col justify-center items-center">
         <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-center"
+          initial={{ opacity: 0, y: -10, scale: 0.8 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="flex flex-col items-center space-y-6"
         >
-          <h2 className="text-2xl font-bold text-gray-200 mb-2">Govind Namdev</h2>
+          {/* Modern circular loading animation */}
+          <div className="relative w-20 h-20">
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+              className="w-20 h-20 border-4 border-gray-600 border-t-cyan-400 rounded-full"
+            ></motion.div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="text-cyan-400 font-bold text-lg">GN</span>
+            </div>
+          </div>
+
+          {/* Name */}
+          <motion.h1
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            className="text-white text-2xl font-bold tracking-wide"
+          >
+            Govind Namdev
+          </motion.h1>
+
+          {/* Loading text */}
           <motion.p
-            className="text-sm text-gray-400 font-mono"
-            animate={{ opacity: [0.5, 1, 0.5] }}
-            transition={{ duration: 2, repeat: Infinity }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
+            className="text-gray-300 text-sm font-mono"
           >
             Loading Portfolio...
           </motion.p>
-        </motion.div>
 
-        {/* Progress bar */}
-        <div className="w-64 h-1 bg-gray-700 rounded-full overflow-hidden">
-          <motion.div
-            className="h-full bg-gradient-to-r from-AAsecondary to-blue-400 rounded-full"
-            initial={{ width: 0 }}
-            animate={{ width: "100%" }}
-            transition={{ duration: 3, ease: "easeInOut" }}
-          />
-        </div>
-      </motion.div>
-    </div>
+          {/* Progress bar */}
+          <div className="w-64 h-1 bg-gray-700 rounded-full overflow-hidden">
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: "100%" }}
+              transition={{ duration: 3.5, ease: "easeInOut" }}
+              className="h-full bg-gradient-to-r from-cyan-400 to-blue-500"
+            ></motion.div>
+          </div>
+        </motion.div>
+      </div>
   );
 }
