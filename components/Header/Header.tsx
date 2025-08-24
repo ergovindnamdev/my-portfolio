@@ -40,7 +40,7 @@ const Header = (props: { finishedLoading: boolean, sectionsRef?: any }) => {
         console.log("Scrolling checking for NavBar ", scrollSizeY.current);
       }
     }
-  }, [context.sharedState.portfolio.NavBar, context.sharedState.portfolio.NavBar.IntervalEvent]);
+  }, [context?.sharedState.portfolio.NavBar, context?.sharedState.portfolio.NavBar.IntervalEvent]);
 
   //Adding the EventListener for the NavBar
   useEffect(() => {
@@ -53,7 +53,7 @@ const Header = (props: { finishedLoading: boolean, sectionsRef?: any }) => {
         window.addEventListener("scroll", context.sharedState.portfolio.NavBar.IntervalEvent);
       }
     }
-  }, [context.sharedState.portfolio.NavBar, context.sharedState.portfolio.NavBar.scrolling]);
+  }, [context?.sharedState.portfolio.NavBar, context?.sharedState.portfolio.NavBar.scrolling]);
 
   
 
