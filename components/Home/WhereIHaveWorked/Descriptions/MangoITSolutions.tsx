@@ -28,7 +28,7 @@ export default function MangoITSolutions() {
         <div className="flex flex-col spacey-y-2">
           {/* Title */}
           <span className="text-gray-500 sm:text-lg text-sm font-Arimo tracking-wide">
-            Team Lead & Full Stack Engineer<span className="text-AAsecondary">@MERN & WP</span>
+            Senior Full Stack Engineer & AI Specialist<span className="text-AAsecondary"> @ Modern Tech Stack</span>
           </span>
           {/* Date */}
           <span className="font-mono text-xs text-gray-500">Jan 2015 - Working</span>

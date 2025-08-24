@@ -52,7 +52,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
         }}
         className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
       >
-        
+
         Passionate <span className="text-AAsecondary">Software Engineer</span>, i possess strong problem-solving skills and specialize in developing web applications and backend systems. My expertise lies in writing clean, efficient code that is both maintainable and easy to troubleshoot. I have successfully collaborated with small and large teams across multiple projects and companies. Whether working remotely or in office environments, I am committed to delivering high-quality solutions.
       </motion.h3>
       <motion.div

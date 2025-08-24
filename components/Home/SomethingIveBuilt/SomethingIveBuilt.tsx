@@ -10,9 +10,11 @@ export default function SomethingIveBuilt() {
   return (
     <div
       id="SomethingIveBuiltSection"
-      className=" flex flex-col xl:space-y-28 space-y-12 bg-AAprimary w-full  
-     2xl:px-72 lg:px-24 md:px-16 sm:px-16 pt-0 px-4 bg-[url('/Bg-Grid.png')]"
+      className=" flex flex-col xl:space-y-28 space-y-12 bg-gradient-to-br from-slate-900 via-AAprimary to-slate-900 w-full  
+     2xl:px-72 lg:px-24 md:px-16 sm:px-16 pt-0 px-4 bg-[url('/Bg-Grid.png')] relative"
     >
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-blue-500/5 to-cyan-500/5"></div>
+      <div className="relative z-10">
       {/* // ? Title  */}
       <div data-aos="fade-up" className=" flex flex-row  items-center md:px-0">
         <ArrowIcon className={"flex-none h-5 md:h-6 w-5 md:w-5 translate-y-[2px] text-AAsecondary"} />
@@ -27,7 +29,7 @@ export default function SomethingIveBuilt() {
       </div>
 
       <div className="flex flex-col   xl:space-y-36 space-y-8 md:space-y-28">
-        {/* // ?  Project  1*/}
+        {/* // ?  Project  1 - AI-Powered Analytics Platform*/}
         <div data-aos="fade-up" className="relative md:grid md:grid-cols-12 w-full md:h-96 ">
           {/* Left image */}
           <div
@@ -35,55 +37,102 @@ export default function SomethingIveBuilt() {
           absolute md:grid grid-cols-12 w-full h-full  content-center"
           >
             <div className="relative rounded w-full h-full col-span-7 ">
-              <a href="https://formee.com" target={"_blank"} rel="noreferrer">
-                <div
-                  className="absolute w-full h-full rounded bg-AAprimary 
-           transition-opacity opacity-30 hover:opacity-0 hover:cursor-pointer duration-300"
-                ></div>
-              </a>
-
-              <Img src={"/formee.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
+              <div className="absolute w-full h-full rounded bg-gradient-to-br from-blue-600 via-purple-600 to-cyan-500 flex items-center justify-center">
+                <div className="text-white text-6xl font-bold opacity-20">AI</div>
+              </div>
+              <div
+                className="absolute w-full h-full rounded bg-AAprimary 
+         transition-opacity opacity-30 hover:opacity-0 hover:cursor-pointer duration-300"
+              ></div>
             </div>
           </div>
 
           {/* right Content */}
           <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
-            {/* background for text in mobile responsive */}
-            {/* <div className="absolute w-full h-full bg-AAsecondary bg-opacity-70 z-0">
-              <div className="relative w-full h-full">
-                <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
-                <Img src={"/formee.png"} alt={"Project Screen shot"} className={`w-full h-full `} />
-              </div>
-            </div> */}
-
             <div
               className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6 xl:col-start-7 col-start-5 
             col-span-8 flex flex-col items-start md:items-end space-y-3"
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
-                <span className="text-AAsecondary text-base">Recent Project</span>
-                <a href="https://formee.com" target="_blank" rel="noopener noreferrer">
-                  <span className=" md:text-gray-300 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                    Formee Marketplace
-                  </span>
-                </a>
+                <span className="text-AAsecondary text-base">Featured Project</span>
+                <span className=" md:text-gray-300 text-AAsecondary font-bold text-xl hover:cursor-pointer">
+                  IntelliChat AI Platform
+                </span>
               </div>
-              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
+              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10 border border-gray-700 backdrop-blur-sm">
                 <p className="text-gray-300 md:text-gray-400 text-left md:text-right ">
-                At <span className="text-AAsecondary">Formee</span>, I held the pivotal role of a team lead, spearheading the development of various website components using <span className="text-AAsecondary">React.js</span>. Our tech stack prominently featured <span className="text-AAsecondary">React.js, Node.js</span>, and <span className="text-AAsecondary">Laravel</span>, which were instrumental in building the platform.
+                A cutting-edge conversational AI platform built with <span className="text-AAsecondary">Next.js</span> and <span className="text-AAsecondary">OpenAI GPT-4</span>. Features include intelligent document processing, real-time chat with memory, sentiment analysis, and custom AI model fine-tuning. Integrated <span className="text-AAsecondary">vector databases</span> for semantic search and <span className="text-AAsecondary">RAG implementation</span> for contextual responses.
 
-                We meticulously managed both aspects of the platform - performance and user experience. Our goal was to ensure optimal performance while simultaneously enhancing the user experience, thereby delivering a robust and user-friendly platform. This dual focus was key to our success in creating a comprehensive and efficient online marketplace.
+                The platform supports multi-modal AI capabilities including text, image, and voice processing, with advanced features like AI-powered code generation and automated testing.
                 </p>
               </div>
               <ul
                 className="flex flex-wrap w-full text-gray-300 md:text-gray-400
                text-sm font-Text2 md:justify-end"
               >
+                <span className="pr-4 z-10">Next.js 14</span>
+                <span className="pr-4 z-10">OpenAI GPT-4</span>
+                <span className="pr-4 z-10">Python</span>
+                <span className="pr-4 z-10">TensorFlow</span>
+                <span className="pr-4 z-10">Vector DB</span>
+                <span className="pr-4 z-10">TypeScript</span>
+              </ul>
+              <div className="z-10 flex fle-row space-x-5 ">
+                <div className="text-gray-400 text-sm">🚀 In Development</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* // ?  Project  2 - Formee Marketplace (Updated)*/}
+        <div data-aos="fade-up" className="relative md:grid md:grid-cols-12 w-full md:h-96 ">
+          {/* Left image */}
+          <div
+            className="hidden bg-AAprimary z-10  py-4 
+          absolute md:grid grid-cols-12 w-full h-full  content-center "
+          >
+            <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
+              <a href="https://formee.com" target={"_blank"} rel="noreferrer">
+                <div
+                  className="absolute w-full h-full rounded bg-AAprimary 
+           transition-opacity opacity-50 hover:opacity-0 hover:cursor-pointer duration-300"
+                ></div>
+              </a>
+              <Img src={"/formee.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
+            </div>
+          </div>
+
+          {/* right Content */}
+          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
+            <div
+              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6   
+            col-span-8 flex flex-col items-start  space-y-3 md:order-1"
+            >
+              <div className="flex flex-col space-y-1  z-10">
+                <span className="text-AAsecondary text-base">Enterprise Project</span>
+                <a href="https://formee.com" target="_blank" rel="noopener noreferrer">
+                  <span className=" md:text-gray-300 text-AAsecondary font-bold text-xl hover:cursor-pointer">
+                    Formee Marketplace
+                  </span>
+                </a>
+              </div>
+              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10 border border-gray-700 backdrop-blur-sm">
+                <p className="text-gray-300 md:text-gray-400 text-left ">
+                As <span className="text-AAsecondary">Technical Lead</span>, I architected and developed a comprehensive marketplace platform using modern <span className="text-AAsecondary">microservices architecture</span>. Implemented <span className="text-AAsecondary">AI-powered recommendations</span>, real-time analytics, and automated testing pipelines.
+
+                The platform features advanced search with <span className="text-AAsecondary">Elasticsearch</span>, integrated payment processing, and a scalable <span className="text-AAsecondary">Docker-based deployment</span> on <span className="text-AAsecondary">AWS ECS</span>. Successfully scaled to handle 10k+ concurrent users with 99.9% uptime.
+                </p>
+              </div>
+              <ul
+                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
+               text-sm font-Text2 md:justify-start"
+              >
                 <span className="pr-4 z-10">React.js</span>
                 <span className="pr-4 z-10">Node.js</span>
-                <span className="pr-4 z-10">Express.js</span>
-                <span className="pr-4 z-10">Laravel</span>
-                <span className="pr-4 z-10">Ant design.</span>
+                <span className="pr-4 z-10">TypeScript</span>
+                <span className="pr-4 z-10">Docker</span>
+                <span className="pr-4 z-10">AWS</span>
+                <span className="pr-4 z-10">Redis</span>
               </ul>
               <div className="z-10 flex fle-row space-x-5 ">
                 <a href="https://www.formee.com" target={"_blank"} rel="noreferrer">
@@ -414,6 +463,7 @@ export default function SomethingIveBuilt() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

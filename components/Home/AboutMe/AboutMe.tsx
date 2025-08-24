@@ -3,11 +3,14 @@ import Img from "../../../components/smallComp/image/Img";
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
 export default function AboutMe(props) {
   const technologies = [
-    ["Next.js", "React.js", "JavaScript (ES6+)", "React Navite", "AWS"],
-    ["Node.js", "TypeScript", "PHP", "WordPress", "WooCommerce"],
+    ["React.js", "Next.js", "TypeScript", "Node.js", "Python"],
+    ["TensorFlow", "OpenAI GPT", "Machine Learning", "AI/ML", "Docker"],
+    ["AWS", "MongoDB", "PostgreSQL", "GraphQL", "Redis"],
   ];
   return (
-    <div id="aboutSection" data-aos="fade-up" className="snap-start flex flex-col  items-center p-0 bg-AAprimary bg-[url('/Bg-Grid.png')]">
+    <div id="aboutSection" data-aos="fade-up" className="snap-start flex flex-col  items-center p-0 bg-gradient-to-br from-AAprimary via-slate-900 to-AAprimary bg-[url('/Bg-Grid.png')] relative">
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-cyan-500/5"></div>
+      <div className="relative z-10 w-full">
       {/* // ? 0.1 About Me */}
       <div
         className="flex flex-col space-y-8 px-4 sm:px-0 w-full sm:w-[500px] 
@@ -29,17 +32,17 @@ export default function AboutMe(props) {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header ">
               <span className="text-gray-400 ">
-              Hello! I am Govind Namdev, a software engineer with a passion for problem-solving. My dedication lies in crafting impactful code that powers the digital world. Since embarking on my computer science journey in 2011, I have been unwavering in my pursuit of excellence within the field. My commitment to crafting impactful code has been a constant throughout my career, propelling the digital world forward.
+              Hello! I am Govind Namdev, a <span className="text-AAsecondary">Full-Stack Engineer</span> and <span className="text-AAsecondary">AI/ML Enthusiast</span> with a passion for building cutting-edge solutions. I specialize in creating scalable web applications and integrating artificial intelligence to solve complex business problems. My journey in computer science since 2011 has evolved from traditional web development to embracing the AI revolution.
               </span>
             </div>
             <div className="font-Header ">
               <span className="text-gray-400 ">
-              With an engineering degree as my foundation, I have navigated through a variety of industries, sharpening my skills in both web and mobile development. My dedication to innovation within the web space is unwavering, and I have had the privilege of contributing significantly to esteemed organizations such as <span className="text-AAsecondary">MangoITSolutions</span>. 
+              With expertise spanning <span className="text-AAsecondary">full-stack development</span>, <span className="text-AAsecondary">AI/ML implementation</span>, and <span className="text-AAsecondary">cloud architecture</span>, I've successfully delivered enterprise-grade solutions across various industries. I specialize in integrating <span className="text-AAsecondary">OpenAI APIs</span>, building <span className="text-AAsecondary">intelligent chatbots</span>, and creating <span className="text-AAsecondary">predictive analytics</span> systems while maintaining my expertise in modern web technologies.
               </span>
             </div>
             <div className="font-Header ">
               <span className="text-gray-400 ">
-              My enthusiasm for web and mobile development is matched only by my commitment to lifelong learning. This combination drives me to not only keep pace with technological advancements but to also make meaningful contributions that leave a lasting impact on the industry.
+              Currently, I'm fascinated by the intersection of <span className="text-AAsecondary">Generative AI</span> and web development, building applications that leverage <span className="text-AAsecondary">LLMs</span>, <span className="text-AAsecondary">computer vision</span>, and <span className="text-AAsecondary">natural language processing</span>. My commitment to staying at the forefront of technology drives me to continuously explore emerging AI tools and frameworks.
               </span>
             </div>
             
@@ -48,31 +51,17 @@ export default function AboutMe(props) {
                 Here are a few technologies I&apos;ve been working with recently :
               </span>
             </div>
-            <div className="font-Header tracking-wide flex flex-row space-x-16">
-              <div className="flex flex-row space-x-2 items-center">
-                <div className="flex flex-col space-y-4 sm:text-base text-sm">
-                  {technologies[0].map((tech, index) => {
-                    return (
-                      <div key={index} className="flex flex-row items-center space-x-2">
-                        <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                        <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
-                      </div>
-                    );
-                  })}
+            <div className="font-Header tracking-wide grid grid-cols-1 md:grid-cols-3 gap-8">
+              {technologies.map((techGroup, groupIndex) => (
+                <div key={groupIndex} className="flex flex-col space-y-3">
+                  {techGroup.map((tech, index) => (
+                    <div key={index} className="flex flex-row items-center space-x-2 group hover:translate-x-1 transition-transform duration-200">
+                      <ArrowIcon className={"h-3 w-3 text-AAsecondary group-hover:text-white transition-colors duration-200"} />
+                      <span className="text-gray-400 sm:text-sm text-xs group-hover:text-white transition-colors duration-200">{tech}</span>
+                    </div>
+                  ))}
                 </div>
-              </div>
-              <div className="flex flex-row space-x-2 items-center">
-                <div className="flex flex-col space-y-4 sm:text-base text-sm">
-                  {technologies[1].map((tech, index) => {
-                    return (
-                      <div key={index} className="flex flex-row items-center space-x-2">
-                        <ArrowIcon className={"h-3 w-3 text-AAsecondary"} />
-                        <span className="text-gray-400 sm:text-sm text-xs">{tech}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
+              ))}
             </div>
           </div>
           {/* // ? Image in Desktop and Tablet */}
@@ -105,6 +94,7 @@ export default function AboutMe(props) {
             <div className="absolute w-48 h-full  bg-AAsecondary opacity-10 md:opacity-60  rounded overflow-hidden"></div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
