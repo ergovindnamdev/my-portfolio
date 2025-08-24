@@ -83,7 +83,7 @@ export default function Home() {
       </Head>
 
       
-        <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
+        <div className="relative snap-mandatory min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-black w-full">
           {/* {context.sharedState.finishedLoading ? <></> : ShowThisCantBeReached ? <ThisCantBeReached /> : <></>} */}
           {context.sharedState.finishedLoading ? <></> : ShowElement ? <Startup /> : <></>}
           <Header finishedLoading={context.sharedState.finishedLoading} sectionsRef={homeRef} />
