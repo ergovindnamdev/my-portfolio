@@ -49,6 +49,25 @@ export default function AboutMe(props) {
               </p>
             </div>
 
+            {/* Professional Summary */}
+            <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 backdrop-blur-sm border border-cyan-400/30 rounded-xl p-6 hover:border-cyan-400/50 transition-all duration-300">
+              <div className="flex items-center mb-4">
+                <div className="w-3 h-3 bg-cyan-400 rounded-full mr-3"></div>
+                <h3 className="text-cyan-400 font-semibold text-lg">What I Do</h3>
+              </div>
+              <p className="text-gray-200 text-lg leading-relaxed">
+                I help <span className="text-cyan-400 font-semibold">startups and growing businesses</span> turn ideas into scalable{" "}
+                <span className="text-cyan-400 font-semibold">SaaS platforms</span>,{" "}
+                <span className="text-cyan-400 font-semibold">eCommerce systems</span>, and{" "}
+                <span className="text-cyan-400 font-semibold">mobile apps</span>. With{" "}
+                <span className="text-cyan-400 font-semibold">15+ years of fullstack experience</span> ({" "}
+                <span className="text-cyan-400">Next.js, Node.js, AWS, WordPress</span>), I've led projects like{" "}
+                <span className="text-cyan-400 font-semibold">Artemis HQ</span>,{" "}
+                <span className="text-cyan-400 font-semibold">sidessocial</span>, and{" "}
+                <span className="text-cyan-400 font-semibold">global SaaS event platforms</span>. If you're looking for a reliable tech partner to accelerate your product roadmap, let's connect.
+              </p>
+            </div>
+
             {/* Experience */}
             <div className="bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-cyan-400/30 transition-all duration-300">
               <p className="text-gray-200 text-lg leading-relaxed">
