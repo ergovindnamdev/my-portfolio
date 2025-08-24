@@ -77,7 +77,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
             </span>{" "}
             and{" "}
             <span className="text-cyan-400 font-semibold">AI Specialist</span>{" "}
-            with 5+ years of experience building scalable web applications,
+            with 15+ years of experience building scalable web applications,
             microservices architectures, and intelligent systems that solve
             real-world problems.
           </p>
