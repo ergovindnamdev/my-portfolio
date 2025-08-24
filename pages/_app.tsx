@@ -2,8 +2,9 @@ import "../styles/globals.css";
 import { Analytics } from '@vercel/analytics/react';
 import AppContext from "../components/AppContextFolder/AppContext";
 import { useRef, useState } from "react";
+import type { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }: { Component: any; pageProps: any }) {
+function MyApp({ Component, pageProps }: AppProps) {
   const timerCookie = useRef(null);
   const windowSizeTrackerRef = useRef(null);
   const mousePositionRef = useRef(null);
