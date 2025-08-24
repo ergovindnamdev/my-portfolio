@@ -3,7 +3,7 @@ import { Analytics } from '@vercel/analytics/react';
 import AppContext from "../components/AppContextFolder/AppContext";
 import { useRef, useState } from "react";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: { Component: any; pageProps: any }) {
   const timerCookie = useRef(null);
   const windowSizeTrackerRef = useRef(null);
   const mousePositionRef = useRef(null);

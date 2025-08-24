@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 import AppContext from "../AppContextFolder/AppContext";
 
 const addClass = (ref: any, myclass: string) => {
-  ref.current?.classLIst.add(myclass);
+  ref.current?.classList.add(myclass);
 };
-const Header = (props: { finishedLoading: boolean,sectionsRef }) => {
+const Header = (props: { finishedLoading: boolean, sectionsRef: React.RefObject<HTMLDivElement> }) => {
   const RefNavBar = useRef<HTMLDivElement>(null);
   const [ShowElement, setShowElement] = useState(false);
   const [rotate, setRotate] = useState<boolean>(false);
