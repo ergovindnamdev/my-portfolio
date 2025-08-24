@@ -10,460 +10,336 @@ export default function SomethingIveBuilt() {
   return (
     <div
       id="SomethingIveBuiltSection"
-      className=" flex flex-col xl:space-y-28 space-y-12 bg-gradient-to-br from-slate-900 via-AAprimary to-slate-900 w-full  
-     2xl:px-72 lg:px-24 md:px-16 sm:px-16 pt-0 px-4 bg-[url('/Bg-Grid.png')] relative"
+      className="flex flex-col space-y-16 bg-gradient-to-br from-slate-900 via-gray-900 to-black w-full 
+     2xl:px-72 lg:px-24 md:px-16 sm:px-16 pt-16 px-4 relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-blue-500/5 to-cyan-500/5"></div>
+      {/* Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 right-20 w-96 h-96 bg-blue-500 opacity-5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-purple-500 opacity-5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] bg-cyan-500 opacity-5 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
+      </div>
+
       <div className="relative z-10">
-      {/* // ? Title  */}
-      <div data-aos="fade-up" className=" flex flex-row  items-center md:px-0">
-        <ArrowIcon className={"flex-none h-5 md:h-6 w-5 md:w-5 translate-y-[2px] text-AAsecondary"} />
-        <div className="flex-none flex-row space-x-2 items-center pr-2">
-          <span className="text-AAsecondary font-sans text-sm  sm:text-xl"> 03.</span>
-          <span className=" font-bold tracking-wider text-gray-300 text-lg md:text-2xl w-44 md:w-56 opacity-85">
-            {" "}
-            Some Things I&apos;ve Built
-          </span>
-        </div>
-        <div className="bg-gray-400 h-[0.2px] w-full xl:w-1/3 md:w-1/2"></div>
-      </div>
-
-      <div className="flex flex-col   xl:space-y-36 space-y-8 md:space-y-28">
-        {/* // ?  Project  1 - AI-Powered Analytics Platform*/}
-        <div data-aos="fade-up" className="relative md:grid md:grid-cols-12 w-full md:h-96 ">
-          {/* Left image */}
-          <div
-            className="hidden bg-AAprimary z-10  py-4 
-          absolute md:grid grid-cols-12 w-full h-full  content-center"
-          >
-            <div className="relative rounded w-full h-full col-span-7 ">
-              <div className="absolute w-full h-full rounded bg-gradient-to-br from-blue-600 via-purple-600 to-cyan-500 flex items-center justify-center">
-                <div className="text-white text-6xl font-bold opacity-20">AI</div>
-              </div>
-              <div
-                className="absolute w-full h-full rounded bg-AAprimary 
-         transition-opacity opacity-30 hover:opacity-0 hover:cursor-pointer duration-300"
-              ></div>
-            </div>
+        {/* Title */}
+        <div data-aos="fade-up" className="flex flex-row items-center md:px-0 mb-12">
+          <ArrowIcon className="flex-none h-5 md:h-6 w-5 md:w-5 translate-y-[2px] text-cyan-400" />
+          <div className="flex-none flex-row space-x-2 items-center pr-2">
+            <span className="text-cyan-400 font-mono text-sm sm:text-xl">03.</span>
+            <span className="font-bold tracking-wider text-white text-lg md:text-2xl opacity-90">
+              Case Studies & Technical Implementations
+            </span>
           </div>
-
-          {/* right Content */}
-          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
-            <div
-              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6 xl:col-start-7 col-start-5 
-            col-span-8 flex flex-col items-start md:items-end space-y-3"
-            >
-              <div className="flex flex-col space-y-1 md:items-end z-10">
-                <span className="text-AAsecondary text-base">Featured Project</span>
-                <span className=" md:text-gray-300 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                  IntelliChat AI Platform
-                </span>
-              </div>
-              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10 border border-gray-700 backdrop-blur-sm">
-                <p className="text-gray-300 md:text-gray-400 text-left md:text-right ">
-                A cutting-edge conversational AI platform built with <span className="text-AAsecondary">Next.js</span> and <span className="text-AAsecondary">OpenAI GPT-4</span>. Features include intelligent document processing, real-time chat with memory, sentiment analysis, and custom AI model fine-tuning. Integrated <span className="text-AAsecondary">vector databases</span> for semantic search and <span className="text-AAsecondary">RAG implementation</span> for contextual responses.
-
-                The platform supports multi-modal AI capabilities including text, image, and voice processing, with advanced features like AI-powered code generation and automated testing.
-                </p>
-              </div>
-              <ul
-                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
-               text-sm font-Text2 md:justify-end"
-              >
-                <span className="pr-4 z-10">Next.js 14</span>
-                <span className="pr-4 z-10">OpenAI GPT-4</span>
-                <span className="pr-4 z-10">Python</span>
-                <span className="pr-4 z-10">TensorFlow</span>
-                <span className="pr-4 z-10">Vector DB</span>
-                <span className="pr-4 z-10">TypeScript</span>
-              </ul>
-              <div className="z-10 flex fle-row space-x-5 ">
-                <div className="text-gray-400 text-sm">🚀 In Development</div>
-              </div>
-            </div>
-          </div>
+          <div className="bg-gray-600 h-[0.2px] w-full xl:w-1/3 md:w-1/2"></div>
         </div>
 
-        {/* // ?  Project  2 - Formee Marketplace (Updated)*/}
-        <div data-aos="fade-up" className="relative md:grid md:grid-cols-12 w-full md:h-96 ">
-          {/* Left image */}
-          <div
-            className="hidden bg-AAprimary z-10  py-4 
-          absolute md:grid grid-cols-12 w-full h-full  content-center "
-          >
-            <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
-              <a href="https://formee.com" target={"_blank"} rel="noreferrer">
-                <div
-                  className="absolute w-full h-full rounded bg-AAprimary 
-           transition-opacity opacity-50 hover:opacity-0 hover:cursor-pointer duration-300"
-                ></div>
-              </a>
-              <Img src={"/formee.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
+        <div className="flex flex-col space-y-20">
+          {/* Case Study 1 - AI Platform Development */}
+          <div data-aos="fade-up" className="group">
+            <div className="bg-gradient-to-br from-slate-800/50 to-gray-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-cyan-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-400/10">
+              <div className="flex flex-col lg:flex-row gap-8">
+                {/* Content */}
+                <div className="lg:w-2/3 space-y-6">
+                  <div className="space-y-3">
+                    <span className="inline-block px-4 py-2 bg-cyan-400/10 text-cyan-400 rounded-full text-sm font-mono border border-cyan-400/20">
+                      AI Platform Development
+                    </span>
+                    <h3 className="text-white text-2xl font-bold group-hover:text-cyan-400 transition-colors duration-300">
+                      Conversational AI Platform with RAG Implementation
+                    </h3>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h4 className="text-cyan-400 font-semibold text-lg">Challenge & Approach:</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Built a cutting-edge conversational AI platform that processes documents, maintains context across sessions, and provides intelligent responses using advanced RAG (Retrieval-Augmented Generation) architecture.
+                    </p>
+
+                    <h4 className="text-cyan-400 font-semibold text-lg">Technical Workflow:</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">Document Processing:</span> Implemented intelligent chunking and vector embedding pipeline using TensorFlow and custom NLP models</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">Vector Search:</span> Integrated semantic search using vector databases for contextual document retrieval</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">AI Integration:</span> Leveraged OpenAI GPT-4 with custom fine-tuning for domain-specific responses</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">Multi-modal Support:</span> Added voice processing and image analysis capabilities for comprehensive AI interaction</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Tech Stack Visual */}
+                <div className="lg:w-1/3">
+                  <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-xl p-6 border border-cyan-400/20">
+                    <h4 className="text-white font-semibold mb-4">Tech Stack</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {["Next.js 14", "OpenAI GPT-4", "Python", "TensorFlow", "Vector DB", "TypeScript", "Node.js", "RAG"].map((tech, index) => (
+                        <span
+                          key={index}
+                          className="px-3 py-1 bg-slate-700/50 text-gray-200 rounded-full text-xs border border-slate-600"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="mt-4 text-cyan-400 text-sm font-mono">🚀 In Development</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* right Content */}
-          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
-            <div
-              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6   
-            col-span-8 flex flex-col items-start  space-y-3 md:order-1"
-            >
-              <div className="flex flex-col space-y-1  z-10">
-                <span className="text-AAsecondary text-base">Enterprise Project</span>
-                <a href="https://formee.com" target="_blank" rel="noopener noreferrer">
-                  <span className=" md:text-gray-300 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                    Formee Marketplace
-                  </span>
-                </a>
-              </div>
-              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10 border border-gray-700 backdrop-blur-sm">
-                <p className="text-gray-300 md:text-gray-400 text-left ">
-                As <span className="text-AAsecondary">Technical Lead</span>, I architected and developed a comprehensive marketplace platform using modern <span className="text-AAsecondary">microservices architecture</span>. Implemented <span className="text-AAsecondary">AI-powered recommendations</span>, real-time analytics, and automated testing pipelines.
+          {/* Case Study 2 - Enterprise Marketplace */}
+          <div data-aos="fade-up" className="group">
+            <div className="bg-gradient-to-br from-slate-800/50 to-gray-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-cyan-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-400/10">
+              <div className="flex flex-col lg:flex-row gap-8">
+                {/* Tech Stack Visual */}
+                <div className="lg:w-1/3 lg:order-2">
+                  <div className="bg-gradient-to-br from-green-600/20 to-blue-600/20 rounded-xl p-6 border border-cyan-400/20">
+                    <h4 className="text-white font-semibold mb-4">Architecture</h4>
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-300 text-sm">Frontend</span>
+                        <span className="text-cyan-400 text-sm">React.js</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-300 text-sm">Backend</span>
+                        <span className="text-cyan-400 text-sm">Node.js</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-300 text-sm">Database</span>
+                        <span className="text-cyan-400 text-sm">MongoDB</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-300 text-sm">Cache</span>
+                        <span className="text-cyan-400 text-sm">Redis</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-300 text-sm">Search</span>
+                        <span className="text-cyan-400 text-sm">Elasticsearch</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-300 text-sm">Deployment</span>
+                        <span className="text-cyan-400 text-sm">AWS ECS</span>
+                      </div>
+                    </div>
+                    <a href="https://formee.com" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block">
+                      <div className="text-cyan-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                        <ExternalLink url="https://formee.com" router={router} />
+                      </div>
+                    </a>
+                  </div>
+                </div>
 
-                The platform features advanced search with <span className="text-AAsecondary">Elasticsearch</span>, integrated payment processing, and a scalable <span className="text-AAsecondary">Docker-based deployment</span> on <span className="text-AAsecondary">AWS ECS</span>. Successfully scaled to handle 10k+ concurrent users with 99.9% uptime.
-                </p>
-              </div>
-              <ul
-                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
-               text-sm font-Text2 md:justify-start"
-              >
-                <span className="pr-4 z-10">React.js</span>
-                <span className="pr-4 z-10">Node.js</span>
-                <span className="pr-4 z-10">TypeScript</span>
-                <span className="pr-4 z-10">Docker</span>
-                <span className="pr-4 z-10">AWS</span>
-                <span className="pr-4 z-10">Redis</span>
-              </ul>
-              <div className="z-10 flex fle-row space-x-5 ">
-                <a href="https://www.formee.com" target={"_blank"} rel="noreferrer">
-                  <ExternalLink url={"https://www.formee.com"} router={router} />
-                </a>
+                {/* Content */}
+                <div className="lg:w-2/3 lg:order-1 space-y-6">
+                  <div className="space-y-3">
+                    <span className="inline-block px-4 py-2 bg-green-400/10 text-green-400 rounded-full text-sm font-mono border border-green-400/20">
+                      Enterprise Marketplace
+                    </span>
+                    <h3 className="text-white text-2xl font-bold group-hover:text-cyan-400 transition-colors duration-300">
+                      Scalable Marketplace Platform - Formee
+                    </h3>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h4 className="text-cyan-400 font-semibold text-lg">Project Leadership & Architecture:</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Led the technical architecture and development of a comprehensive marketplace platform, implementing microservices architecture to handle high-traffic scenarios and complex business logic.
+                    </p>
+
+                    <h4 className="text-cyan-400 font-semibold text-lg">Implementation Workflow:</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">Microservices Design:</span> Architected scalable backend services with Docker containerization and orchestration</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">AI-Powered Features:</span> Integrated recommendation engine and intelligent search using machine learning algorithms</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">Performance Optimization:</span> Achieved 99.9% uptime with load balancing and automated scaling on AWS ECS</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">Real-time Analytics:</span> Implemented comprehensive monitoring and analytics dashboard for business insights</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
+          {/* Case Study 3 - Event Management Platform */}
+          <div data-aos="fade-up" className="group">
+            <div className="bg-gradient-to-br from-slate-800/50 to-gray-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-cyan-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-400/10">
+              <div className="flex flex-col lg:flex-row gap-8">
+                {/* Content */}
+                <div className="lg:w-2/3 space-y-6">
+                  <div className="space-y-3">
+                    <span className="inline-block px-4 py-2 bg-purple-400/10 text-purple-400 rounded-full text-sm font-mono border border-purple-400/20">
+                      Event Management SaaS
+                    </span>
+                    <h3 className="text-white text-2xl font-bold group-hover:text-cyan-400 transition-colors duration-300">
+                      Social Event Planning Platform - Purposite
+                    </h3>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h4 className="text-cyan-400 font-semibold text-lg">Team Leadership & Full-Stack Development:</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Served as technical lead for developing a comprehensive event management platform that enables collaborative gift-giving and social event organization with real-time features.
+                    </p>
+
+                    <h4 className="text-cyan-400 font-semibold text-lg">Technical Implementation:</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">API Design:</span> Architected RESTful APIs for user management, event creation, and payment processing</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">Real-time Features:</span> Implemented live updates for event participation and gift contributions using WebSocket</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">Database Optimization:</span> Designed efficient MySQL schemas for complex event relationships and user interactions</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">AWS Integration:</span> Deployed scalable infrastructure with automated backup and monitoring systems</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Tech Stack Visual */}
+                <div className="lg:w-1/3">
+                  <div className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 rounded-xl p-6 border border-cyan-400/20">
+                    <h4 className="text-white font-semibold mb-4">Development Stack</h4>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {["React.js", "Node.js", "MySQL", "AWS", "WebSocket", "Express.js"].map((tech, index) => (
+                        <span
+                          key={index}
+                          className="px-3 py-1 bg-slate-700/50 text-gray-200 rounded-full text-xs border border-slate-600"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-gray-300">Users</span>
+                        <span className="text-purple-400">5000+</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-gray-300">Events Created</span>
+                        <span className="text-purple-400">15,000+</span>
+                      </div>
+                    </div>
+                    <a href="https://purpositdev.com/" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block">
+                      <div className="text-cyan-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                        <ExternalLink url="https://purpositdev.com/" router={router} />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Case Study 4 - E-commerce Platform */}
+          <div data-aos="fade-up" className="group">
+            <div className="bg-gradient-to-br from-slate-800/50 to-gray-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-cyan-400/30 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-400/10">
+              <div className="flex flex-col lg:flex-row gap-8">
+                {/* Tech Stack Visual */}
+                <div className="lg:w-1/3 lg:order-2">
+                  <div className="bg-gradient-to-br from-orange-600/20 to-red-600/20 rounded-xl p-6 border border-cyan-400/20">
+                    <h4 className="text-white font-semibold mb-4">E-commerce Stack</h4>
+                    <div className="space-y-3">
+                      <div className="text-orange-400 text-sm">WordPress + WooCommerce</div>
+                      <div className="space-y-2">
+                        <div className="flex justify-between text-xs">
+                          <span className="text-gray-300">Stripe</span>
+                          <span className="text-green-400">✓</span>
+                        </div>
+                        <div className="flex justify-between text-xs">
+                          <span className="text-gray-300">PayPal</span>
+                          <span className="text-green-400">✓</span>
+                        </div>
+                        <div className="flex justify-between text-xs">
+                          <span className="text-gray-300">Apple Pay</span>
+                          <span className="text-green-400">✓</span>
+                        </div>
+                        <div className="flex justify-between text-xs">
+                          <span className="text-gray-300">Google Pay</span>
+                          <span className="text-green-400">✓</span>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="https://gunillaofsweden.com/" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block">
+                      <div className="text-cyan-400 hover:text-white transition-colors duration-300 cursor-pointer">
+                        <ExternalLink url="https://gunillaofsweden.com/" router={router} />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="lg:w-2/3 lg:order-1 space-y-6">
+                  <div className="space-y-3">
+                    <span className="inline-block px-4 py-2 bg-orange-400/10 text-orange-400 rounded-full text-sm font-mono border border-orange-400/20">
+                      E-commerce Platform
+                    </span>
+                    <h3 className="text-white text-2xl font-bold group-hover:text-cyan-400 transition-colors duration-300">
+                      Subscription-based E-commerce - Gunila of Sweden
+                    </h3>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h4 className="text-cyan-400 font-semibold text-lg">Complex E-commerce Solution:</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Developed a sophisticated subscription-based e-commerce platform with multi-gateway payment processing and automated recurring billing systems.
+                    </p>
+
+                    <h4 className="text-cyan-400 font-semibold text-lg">Development Process:</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">Multi-Gateway Integration:</span> Seamlessly integrated Stripe, PayPal, Apple Pay, and Google Pay for global accessibility</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">Subscription Management:</span> Built automated recurring billing with flexible subscription intervals and pause/resume functionality</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">Custom Development:</span> Created specialized WooCommerce extensions for complex product variants and shipping rules</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-gray-300"><span className="text-white font-medium">Performance Optimization:</span> Implemented caching strategies and database optimization for high-traffic handling</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-
-        {/* // ?  Project 2 */}
-        <div data-aos="fade-up" className="relative md:grid md:grid-cols-12 w-full md:h-96  ">
-          {/* Left image */}
-          <div
-            className="hidden bg-AAprimary z-10  py-4 
-          absolute md:grid grid-cols-12 w-full h-full  content-center "
-          >
-            <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
-              <a href={"https://purpositdev.com/"} target="_blank" rel="noreferrer">
-                <div
-                  className="absolute w-full h-full rounded bg-AAprimary 
-           transition-opacity opacity-50 hover:opacity-0 hover:cursor-pointer duration-300"
-                ></div>
-              </a>
-              <Img src={"/purposite.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
-            </div>
-          </div>
-
-          {/* right Content */}
-          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
-            {/* background for text in mobile responsive */}
-            {/* <div className="absolute w-full h-full bg-opacity-70 z-0 md:order-2">
-              <div className="relative w-full h-full">
-                <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
-                <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
-                <Img src={"/purposite.png"} alt={"Project Screen shot"} className={`w-full h-full`} />
-              </div>
-            </div> */}
-
-            <div
-              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6   
-            col-span-8 flex flex-col items-start  space-y-3 md:order-1"
-            >
-              <div className="flex flex-col space-y-1  z-10">
-                <span className="text-AAsecondary text-base">Recent Project</span>
-                <a href="https://purpositdev.com/" target="_blank" rel="noopener noreferrer">
-                  <span className=" md:text-gray-300 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                    Purposite
-                  </span>
-                </a>
-              </div>
-              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
-                <p className="text-gray-300 md:text-gray-400 text-left ">
-                  I was privileged to serve as the team lead for the Purosite project. Our objective was to develop a user-friendly website using <span className="text-AAsecondary">React.js, Node.js, and MySQL</span>. My role involved overseeing the project’s <span className="text-AAsecondary">planning</span> and development stages, which included <span className="text-AAsecondary">designing</span> and <span className="text-AAsecondary">implementing APIs.</span>
-
-                  Purosite is a versatile platform that offers users the ability to organize various events such as birthdays, Christmas, baby showers, and more. It provides a unique feature where users can invite others to join the event and contribute towards a common gift if they wish. This makes Purosite a convenient and interactive tool for event planning and gift-giving. 
-                </p>
-              </div>
-              <ul
-                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
-               text-sm font-Text2 md:justify-start"
-              >
-                <span className="pr-4 z-10">React.js</span>
-                <span className="pr-4 z-10">Node.js</span>
-                <span className="pr-4 z-10">MySQL</span>
-                <span className="pr-4 z-10">AWS</span>
-              </ul>
-              <div className="z-10 flex fle-row space-x-5 ">
-                <a href="https://purpositdev.com/" target={"_blank"} rel="noreferrer">
-                  <ExternalLink url={"https://purpositdev.com/"} router={router} />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* // ?  Project  3*/}
-        <div data-aos="fade-up" className="relative md:grid md:grid-cols-12 w-full md:h-96 ">
-          {/* Left image */}
-          <div
-            className="hidden bg-AAprimary z-10  py-4 
-          absolute md:grid grid-cols-12 w-full h-full  content-center"
-          >
-            <div className="relative rounded w-full h-full col-span-7 ">
-              <Link href={"https://advisionary.io/"}>
-                <div
-                  // onClick={}
-                  className="absolute w-full h-full rounded bg-AAprimary 
-           transition-opacity opacity-10 hover:opacity-0 hover:cursor-pointer duration-300"
-                ></div>
-              </Link>
-
-              <Img src={"/advisionary.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
-            </div>
-          </div>
-
-          {/* right Content */}
-          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
-            {/* background for text in mobile responsive */}
-            {/* <div className="absolute w-full h-full bg-opacity-70 z-0">
-              <div className="relative w-full h-full">
-                <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
-                <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
-                <Img src={"/advisionary.png"} alt={"Project Screen shot"} className={`w-full h-full `} />
-              </div>
-            </div> */}
-
-            <div
-              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6 xl:col-start-7 col-start-5 
-            col-span-8 flex flex-col items-start md:items-end space-y-3"
-            >
-              <div className="flex flex-col space-y-1 md:items-end z-10">
-                <span className="text-AAsecondary text-base">Recent Project</span>
-                <Link href={"https://advisionary.io/"}>
-                  <span className=" md:text-gray-300 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                    Advisionry
-                  </span>
-                </Link>
-              </div>
-              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
-                <p className="text-gray-300 md:text-gray-400 text-left md:text-right">
-                Advisionry is a comprehensive information portal for a company, meticulously crafted using <span className="text-AAsecondary">React.js</span>. This platform serves as a digital representation of the company, providing general information to its visitors. The use of <span className="text-AAsecondary">React.js</span> ensures a seamless and interactive user experience, making Advisionry a reliable and efficient resource.
-                </p>
-              </div>
-              <ul
-                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
-               text-sm font-Text2 md:justify-end"
-              >
-                <span className="pr-4 z-10">React.js</span>
-              </ul>
-              <div className="z-10 flex fle-row space-x-5 ">
-                <ExternalLink url={"https://advisionary.io/"} router={router} />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* // ?  Project 4 */}
-        <div data-aos="fade-up" className="relative md:grid md:grid-cols-12 w-full md:h-96  ">
-          {/* Left image */}
-          <div
-            className="hidden bg-AAprimary z-10  py-4 
-          absolute md:grid grid-cols-12 w-full h-full  content-center "
-          >
-            <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
-              <Link href={"https://adi.artemishq.com/"}>
-                <div
-                  className="absolute w-full h-full rounded bg-AAprimary 
-           transition-opacity opacity-10 hover:opacity-0 hover:cursor-pointer duration-300"
-                ></div>
-              </Link>
-              <Img src={"/artemishq.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
-            </div>
-          </div>
-
-          {/* right Content */}
-          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
-            {/* background for text in mobile responsive */}
-            {/* <div className="absolute w-full h-full bg-opacity-70 z-0 md:order-2">
-              <div className="relative w-full h-full">
-                <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
-                <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
-                <Img src={"/artemishq.png"} alt={"Project Screen shot"} className={`w-full h-full`} />
-              </div>
-            </div> */}
-
-            <div
-              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6   
-            col-span-8 flex flex-col items-start  space-y-3 md:order-1"
-            >
-              <div className="flex flex-col space-y-1  z-10">
-                <span className="text-AAsecondary text-base">Recent Project</span>
-                <Link href={"https://adi.artemishq.com/"}>
-                  <span className=" md:text-gray-300 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                    Artemish
-                  </span>
-                </Link>
-              </div>
-              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
-                <p className="text-gray-300 md:text-gray-400 text-left ">
-                  Artemish is a platform dedicated to providing comprehensive gun use training and certification. As the project lead, I had the privilege of spearheading the development of a custom class schedule feature tailored to meet the client’s specific requirements. I take immense pride in my team’s ability to successfully fulfill this custom schedule feature.
-
-                  The platform is built using <span className="text-AAsecondary">WordPress</span> and <span className="text-AAsecondary">WooCommerce</span>, with <span className="text-AAsecondary">Subscription</span> and <span className="text-AAsecondary">Authorize.net</span> integrated as the payment gateway. To accommodate the custom schedule feature, we developed bespoke plugins, further enhancing the platform’s functionality and user experience. This blend of technologies and custom solutions makes Artemish a reliable and efficient resource for gun use training and certification.
-                </p>
-              </div>
-              <ul
-                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
-               text-sm font-Text2 md:justify-start"
-              >
-                <span className="pr-4 z-10">WordPress</span>
-                <span className="pr-4 z-10">WooCommerce</span>
-                <span className="pr-4 z-10">Authorize.net</span>
-                <span className="pr-4 z-10">Subscription</span>
-              </ul>
-              <div className="z-10 flex fle-row space-x-5 ">
-                <ExternalLink url={"https://adi.artemishq.com/"} router={router} />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* // ? Project 5 */}
-        <div data-aos="fade-up" className="relative md:grid md:grid-cols-12 w-full md:h-96">
-          {/* Left image */}
-          <div
-            className="hidden bg-AAprimary z-10  py-4 
-          absolute md:grid grid-cols-12 w-full h-full  content-center"
-          >
-            <div className="relative rounded w-full h-full col-span-7 ">
-              <a href="https://gunillaofsweden.com/" target={"_blank"} rel="noreferrer">
-                <div
-                  // onClick={}
-                  className="absolute w-full h-full rounded bg-AAprimary 
-           transition-opacity opacity-50 hover:opacity-0 hover:cursor-pointer duration-300"
-                ></div>
-              </a>
-              <Img src={"/gunilaofsweden.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
-            </div>
-          </div>
-
-          {/* right Content */}
-          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
-            {/* background for text in mobile responsive */}
-            {/* <div className="absolute w-full h-full bg-opacity-70 z-0">
-              <div className="relative w-full h-full">
-                <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
-                <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
-                <Img src={"/gunilaofsweden.png"} alt={"Project Screen shot"} className={`w-full h-full `} />
-              </div>
-            </div> */}
-            <div
-              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6 xl:col-start-7 col-start-5 
-            col-span-8 flex flex-col items-start md:items-end sm:space-y-3 space-y-1"
-            >
-              <div className="flex flex-col space-y-1 md:items-end z-10">
-                <span className="text-AAsecondary text-base">Recent Project</span>
-                <a href="https://gunillaofsweden.com/" target={"_blank"} rel="noreferrer">
-                  <span className=" md:text-gray-300 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                    Gunila Of Sweden
-                  </span>
-                </a>
-              </div>
-              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
-                <p className="text-gray-300 md:text-gray-400 text-left md:text-right">
-                  Gunila of Sweden is an e-commerce platform built using <span className="text-AAsecondary">WordPress</span> and <span className="text-AAsecondary">WooCommerce</span>. It offers a unique subscription feature, allowing customers to receive products at specific time intervals. To ensure a seamless shopping experience, we have integrated multiple payment gateways, including <span className="text-AAsecondary">Stripe</span>, <span className="text-AAsecondary">Google Pay</span>, <span className="text-AAsecondary">Apple Pay</span>, and <span className="text-AAsecondary">PayPal</span>. This diverse range of payment options provides convenience and flexibility to our customers, enhancing their overall shopping experience on Gunila of Sweden.
-                </p>
-              </div>
-              <ul
-                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
-               text-sm font-Text2 md:justify-end"
-              >
-                <span className="pr-4 z-10">WordPress</span>
-                <span className="pr-4 z-10">WooCommerce</span>
-                <span className="pr-4 z-10">Stripe</span>
-                <span className="pr-4 z-10">PayPal</span>
-              </ul>
-              <div className="z-10 flex fle-row space-x-5 sm:pt-0 pt-2">
-                <a href="https://gunillaofsweden.com/" target={"_blank"} rel="noreferrer">
-                  <ExternalLink url={"https://gunillaofsweden.com/"} router={router} />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* // ?  Project 6 */}
-        <div data-aos="fade-up" className="relative md:grid md:grid-cols-12 w-full md:h-96  ">
-          {/* Left image */}
-          <div
-            className="hidden bg-AAprimary z-10  py-4 
-          absolute md:grid grid-cols-12 w-full h-full  content-center "
-          >
-            <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
-              <a href="https://psychicelements.com/" target={"_blank"} rel="noreferrer">
-                <div
-                  className="absolute w-full h-full rounded bg-AAprimary 
-           transition-opacity opacity-60 hover:opacity-0 hover:cursor-pointer duration-300"
-                ></div>
-              </a>
-
-              <Img src={"/psychicelements.png"} alt={"Project Screen shot"} className={`w-full rounded h-full `} />
-            </div>
-          </div>
-
-          {/* right Content */}
-          <div className=" md:absolute py-4  md:grid md:grid-cols-12 w-full h-full  content-center ">
-            {/* background for text in mobile responsive */}
-            {/* <div className="absolute w-full h-full bg-opacity-70 z-0 md:order-2">
-              <div className="relative w-full h-full">
-                <div className="absolute w-full h-full bg-AAprimary opacity-50 z-10"></div>
-                <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
-                <Img src={"/psychicelements.png"} alt={"Project Screen shot"} className={`w-full h-full`} />
-              </div>
-            </div> */}
-
-            <div
-              className="px-8 pt-8 sm:pt-12 md:py-0 xl:col-span-6   
-            col-span-8 flex flex-col items-start  sm:space-y-3 md:order-1"
-            >
-              <div className="flex flex-col space-y-1  z-10">
-                <span className="text-AAsecondary text-base">Recent Project</span>
-                <a href="https://psychicelements.com/" target={"_blank"} rel="noreferrer">
-                  <span className=" md:text-gray-300 text-AAsecondary font-bold text-xl hover:cursor-pointer">
-                    Psychic Elements
-                  </span>
-                </a>
-              </div>
-              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
-                <p className="text-gray-300 md:text-gray-400 text-left ">
-                  Psychic Element is a unique platform that allows users to review and interact with available Psychics for personal guidance. The website is bifurcated into two platforms - one developed using <span className="text-AAsecondary">WordPress</span> and the other built on a <span className="text-AAsecondary">PHP framework</span>.
-
-                  We have integrated <span className="text-AAsecondary">Twilio</span>, <span className="text-AAsecondary">Alower</span> and <span className="text-AAsecondary">Plivo</span>, which serve as the communication bridge between users and psychics. These integrations also facilitate the management of schedules with psychics, ensuring a seamless and personalized user experience on Psychic Element.
-                </p>
-              </div>
-              <ul
-                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
-               text-sm font-Text2 md:justify-start"
-              >
-                <span className="pr-4 z-10">WordPress</span>
-                <span className="pr-4 z-10">Twilio</span>
-                <span className="pr-4 z-10">Alower</span>
-                <span className="pr-4 z-10">Plivo</span>
-              </ul>
-              <div className="z-10 flex fle-row space-x-5 sm:pt-0 pt-2">
-                <a href="https://psychicelements.com/" target={"_blank"} rel="noreferrer">
-                  <ExternalLink url={"https://psychicelements.com/"} router={router} />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
   );
