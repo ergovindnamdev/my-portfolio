@@ -18,6 +18,7 @@ const Header = (props: { finishedLoading: boolean, sectionsRef?: any }) => {
 
   // Define the EventListener for the NavBar
   useEffect(() => {
+    if (!context) return;
     if (context.sharedState.portfolio.NavBar.IntervalEvent == null) {
       context.sharedState.portfolio.NavBar.IntervalEvent=() => {
         if (scrollSizeY.current == 0) {
@@ -43,6 +44,7 @@ const Header = (props: { finishedLoading: boolean, sectionsRef?: any }) => {
 
   //Adding the EventListener for the NavBar
   useEffect(() => {
+    if (!context) return;
     if (context.sharedState.portfolio.NavBar.scrolling == null) {
       context.sharedState.portfolio.NavBar.scrolling = true;
       scrollSizeY.current = 0;
