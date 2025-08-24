@@ -63,7 +63,7 @@ export default function Home() {
         context.setSharedState(context.sharedState);
       }
     }, 2500);
-  }, [context, context.sharedState]);
+  }, [context, context?.sharedState]);
 
   useEffect(() => {
     Aos.init({ duration: 2000, once: true });
