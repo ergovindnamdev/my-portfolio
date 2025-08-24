@@ -72,9 +72,14 @@ export default function MyName(props: { finishedLoading: boolean }) {
         >
           <p className="text-gray-300 font-Header text-lg sm:text-xl max-w-2xl leading-relaxed">
             I'm a passionate{" "}
-            <span className="text-cyan-400 font-semibold">Full Stack Engineer</span> and{" "}
-            <span className="text-cyan-400 font-semibold">AI Specialist</span> with 5+ years of experience 
-            building scalable web applications, microservices architectures, and intelligent systems that solve real-world problems.
+            <span className="text-cyan-400 font-semibold">
+              Full Stack Engineer
+            </span>{" "}
+            and{" "}
+            <span className="text-cyan-400 font-semibold">AI Specialist</span>{" "}
+            with 5+ years of experience building scalable web applications,
+            microservices architectures, and intelligent systems that solve
+            real-world problems.
           </p>
         </motion.div>
 
@@ -100,7 +105,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
           </a>
 
           <a
-            href="https://wa.me/+918989901702"
+            href="https://wa.me/+919993583578"
             target="_blank"
             rel="noreferrer"
             className="group"
@@ -119,11 +124,24 @@ export default function MyName(props: { finishedLoading: boolean }) {
             opacity: { delay: props.finishedLoading ? 0 : 1.1, duration: 0.4 },
             y: { delay: props.finishedLoading ? 0 : 1.1, duration: 0.4 },
           }}
-          className="mt-12"
+          className="mt-12 mb-4"
         >
-          <p className="text-gray-400 font-mono text-sm mb-4">Currently working with:</p>
+          <p className="text-gray-400 font-mono text-sm mb-4">
+            Currently working with:
+          </p>
           <div className="flex flex-wrap gap-3">
-            {["React.js", "Node.js", "TypeScript", "Python", "AI/ML", "AWS", "Docker", "Next.js", "MongoDB", "TensorFlow"].map((tech, index) => (
+            {[
+              "React.js",
+              "Node.js",
+              "TypeScript",
+              "Python",
+              "AI/ML",
+              "AWS",
+              "Docker",
+              "Next.js",
+              "MongoDB",
+              "TensorFlow",
+            ].map((tech, index) => (
               <span
                 key={index}
                 className="px-4 py-2 bg-slate-800 text-gray-200 rounded-full text-xs font-mono border border-slate-600 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300 hover:scale-105"
