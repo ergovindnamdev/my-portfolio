@@ -24,22 +24,22 @@ export default function GetInTouch() {
               04.
             </span>
             <span className="font-mono text-cyan-400 text-base">
-              What's Next?
+              What&apos;s Next?
             </span>
           </div>
         </div>
 
         {/* Main Title */}
         <h2 className="text-white text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-          Let's Build Something
+          Let&apos;s Build Something
           <span className="block text-cyan-400">Amazing Together</span>
         </h2>
 
         {/* Description */}
         <p className="text-gray-300 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed mb-12">
-          Ready to turn your ideas into reality? I'm here to help you build
+          Ready to turn your ideas into reality? I&apos;m here to help you build
           scalable solutions, implement AI features, or tackle complex technical
-          challenges. Let's discuss your project and explore how we can work
+          challenges. Let&apos;s discuss your project and explore how we can work
           together.
         </p>
 

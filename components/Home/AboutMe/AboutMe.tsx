@@ -93,15 +93,15 @@ export default function AboutMe(props) {
                 <span className="text-cyan-400">
                   Next.js, Node.js, AWS, WordPress
                 </span>
-                ), I've led projects like{" "}
+                ), I&apos;ve led projects like{" "}
                 <span className="text-cyan-400 font-semibold">Artemis HQ</span>,{" "}
                 <span className="text-cyan-400 font-semibold">sidessocial</span>
                 , and{" "}
                 <span className="text-cyan-400 font-semibold">
                   global SaaS event platforms
                 </span>
-                . If you're looking for a reliable tech partner to accelerate
-                your product roadmap, let's connect.
+                . If you&apos;re looking for a reliable tech partner to accelerate
+                your product roadmap, let&apos;s connect.
               </p>
             </div>
 
@@ -120,7 +120,7 @@ export default function AboutMe(props) {
                 <span className="text-cyan-400 font-semibold">
                   cloud architecture
                 </span>
-                , I've successfully delivered enterprise-grade solutions across
+                , I&apos;ve successfully delivered enterprise-grade solutions across
                 various industries. I specialize in integrating{" "}
                 <span className="text-cyan-400 font-semibold">OpenAI APIs</span>
                 , building{" "}
@@ -138,7 +138,7 @@ export default function AboutMe(props) {
             {/* Current Focus */}
             <div className="bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-cyan-400/30 transition-all duration-300">
               <p className="text-gray-200 text-lg leading-relaxed">
-                Currently, I'm fascinated by the intersection of{" "}
+                Currently, I&apos;m fascinated by the intersection of{" "}
                 <span className="text-cyan-400 font-semibold">
                   Generative AI
                 </span>{" "}

@@ -71,7 +71,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
           className="mb-8"
         >
           <p className="text-gray-300 font-Header text-lg sm:text-xl max-w-2xl leading-relaxed">
-            I'm a passionate{" "}
+            I&apos;m a passionate{" "}
             <span className="text-cyan-400 font-semibold">
               Full Stack Engineer
             </span>{" "}
