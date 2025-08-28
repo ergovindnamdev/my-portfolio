@@ -8,7 +8,7 @@ export default function WhereIHaveWorked() {
       company: "Freelance Developer",
       role: "Full Stack Developer & SaaS/eCommerce Specialist",
       period: "Jan 2025 - Present",
-      website: "www.govindnam.dev",
+      website: "govindnamdev.netlify.app",
       technologies: [
         "React.js",
         "Next.js",
