@@ -5,9 +5,26 @@ import ArrowIcon from "../../Icons/ArrowIcon";
 export default function WhereIHaveWorked() {
   const workExperience = [
     {
+      company: "Freelance Developer",
+      role: "Full Stack Developer & SaaS/eCommerce Specialist",
+      period: "Jan 2025 - Present",
+      website: "www.govindnam.dev",
+      technologies: [
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "Python",
+        "AI/ML",
+        "SaaS",
+        "eCommerce",
+      ],
+      experience:
+        "Helping clients build scalable SaaS platforms and eCommerce solutions. Specializing in end-to-end project development, from concept to deployment with modern tech stacks.",
+    },
+    {
       company: "MangoITSolutions",
       role: "Senior Full Stack Engineer & AI Specialist",
-      period: "Jan 2015 - Present",
+      period: "Jan 2015 - Jan 2025",
       website: "www.mangoitsolutions.com",
       technologies: [
         "React.js",
