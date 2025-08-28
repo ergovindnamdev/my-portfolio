@@ -1,4 +1,3 @@
-
 import React from "react";
 import ArrowIcon from "../../../Icons/ArrowIcon";
 import { getTasksTextWithHighlightedKeyword } from "./taskAndType";
@@ -29,16 +28,21 @@ export default function FreelanceDeveloper() {
         <div className="flex flex-col spacey-y-2">
           {/* Title */}
           <span className="text-gray-500 sm:text-lg text-sm font-Arimo tracking-wide">
-            Full Stack Developer & SaaS/eCommerce Specialist<span className="text-AAsecondary"> @ Freelance</span>
+            Full Stack Developer & SaaS/eCommerce Specialist
+            <span className="text-AAsecondary"> @ Freelance</span>
           </span>
           {/* Date */}
-          <span className="font-mono text-xs text-gray-500">Jan 2025 - Present</span>
+          <span className="font-mono text-xs text-gray-500">
+            Jan 2025 - Present
+          </span>
           <span
             className="font-mono text-xs text-AAsecondary hover:cursor-pointer"
             style={{ fontSize: "0.6rem" }}
-            onClick={() => window.open("https://www.govindnam.dev/", "_blank")}
+            onClick={() =>
+              window.open("https://govindnamdev.netlify.app/", "_blank")
+            }
           >
-            www.govindnam.dev
+            govindnamdev.netlify.app
           </span>
         </div>
         <div className="flex flex-col space-y-4 sm:text-sm text-xs">
@@ -50,7 +54,10 @@ export default function FreelanceDeveloper() {
                 <span
                   className="text-gray-500 sm:text-sm text-xs"
                   dangerouslySetInnerHTML={{
-                    __html: getTasksTextWithHighlightedKeyword(item.text, item.keywords),
+                    __html: getTasksTextWithHighlightedKeyword(
+                      item.text,
+                      item.keywords,
+                    ),
                   }}
                 ></span>
               </div>
